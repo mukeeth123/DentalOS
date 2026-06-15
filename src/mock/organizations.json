@@ -1,0 +1,67 @@
+[
+  {
+    "id": "org-1",
+    "name": "SmileCare Dental",
+    "tagline": "General & Pediatric Excellence",
+    "primaryColor": "#3B82F6",
+    "secondaryColor": "#DBEAFE",
+    "logoIcon": "tooth-smile",
+    "specialty": ["General", "Pediatric"],
+    "totalStaff": 12,
+    "totalPatients": 847,
+    "clinics": [
+      { "id": "clinic-1a", "name": "SmileCare - Downtown", "address": { "street": "123 Main St", "city": "Austin", "state": "TX", "zip": "78701" }, "phone": "(512) 555-0101", "orgId": "org-1" },
+      { "id": "clinic-1b", "name": "SmileCare - Westlake", "address": { "street": "456 Lake Austin Blvd", "city": "Austin", "state": "TX", "zip": "78746" }, "phone": "(512) 555-0102", "orgId": "org-1" },
+      { "id": "clinic-1c", "name": "SmileCare - Round Rock", "address": { "street": "789 University Blvd", "city": "Round Rock", "state": "TX", "zip": "78665" }, "phone": "(512) 555-0103", "orgId": "org-1" }
+    ]
+  },
+  {
+    "id": "org-2",
+    "name": "Bright Dental Group",
+    "tagline": "General & Orthodontic Specialists",
+    "primaryColor": "#F97316",
+    "secondaryColor": "#FED7AA",
+    "logoIcon": "sunburst-tooth",
+    "specialty": ["General", "Orthodontics"],
+    "totalStaff": 28,
+    "totalPatients": 2341,
+    "clinics": [
+      { "id": "clinic-2a", "name": "Bright Dental - North", "address": { "street": "100 North Loop", "city": "Houston", "state": "TX", "zip": "77008" }, "phone": "(713) 555-0201", "orgId": "org-2" },
+      { "id": "clinic-2b", "name": "Bright Dental - South", "address": { "street": "200 South Blvd", "city": "Houston", "state": "TX", "zip": "77025" }, "phone": "(713) 555-0202", "orgId": "org-2" },
+      { "id": "clinic-2c", "name": "Bright Dental - Katy", "address": { "street": "300 Katy Freeway", "city": "Katy", "state": "TX", "zip": "77494" }, "phone": "(713) 555-0203", "orgId": "org-2" },
+      { "id": "clinic-2d", "name": "Bright Dental - Sugar Land", "address": { "street": "400 Sugar Land Dr", "city": "Sugar Land", "state": "TX", "zip": "77478" }, "phone": "(713) 555-0204", "orgId": "org-2" },
+      { "id": "clinic-2e", "name": "Bright Dental - Pearland", "address": { "street": "500 Broadway St", "city": "Pearland", "state": "TX", "zip": "77581" }, "phone": "(713) 555-0205", "orgId": "org-2" }
+    ]
+  },
+  {
+    "id": "org-3",
+    "name": "Elite Smiles",
+    "tagline": "Cosmetic & Implant Perfectionists",
+    "primaryColor": "#EAB308",
+    "secondaryColor": "#1E293B",
+    "logoIcon": "diamond-tooth",
+    "specialty": ["Cosmetic", "Implants"],
+    "totalStaff": 9,
+    "totalPatients": 612,
+    "clinics": [
+      { "id": "clinic-3a", "name": "Elite Smiles - Uptown", "address": { "street": "One Uptown Plaza", "city": "Dallas", "state": "TX", "zip": "75201" }, "phone": "(214) 555-0301", "orgId": "org-3" },
+      { "id": "clinic-3b", "name": "Elite Smiles - Plano", "address": { "street": "999 Legacy Dr", "city": "Plano", "state": "TX", "zip": "75024" }, "phone": "(214) 555-0302", "orgId": "org-3" }
+    ]
+  },
+  {
+    "id": "org-4",
+    "name": "Perfect Dental",
+    "tagline": "DSO Multi-Location Network",
+    "primaryColor": "#22C55E",
+    "secondaryColor": "#DCFCE7",
+    "logoIcon": "check-tooth",
+    "specialty": ["General", "Pediatric", "Orthodontics", "Oral Surgery"],
+    "totalStaff": 45,
+    "totalPatients": 4120,
+    "clinics": [
+      { "id": "clinic-4a", "name": "Perfect Dental - Central", "address": { "street": "1 Central Park", "city": "San Antonio", "state": "TX", "zip": "78205" }, "phone": "(210) 555-0401", "orgId": "org-4" },
+      { "id": "clinic-4b", "name": "Perfect Dental - North SA", "address": { "street": "2 North Loop 1604", "city": "San Antonio", "state": "TX", "zip": "78249" }, "phone": "(210) 555-0402", "orgId": "org-4" },
+      { "id": "clinic-4c", "name": "Perfect Dental - Alamo", "address": { "street": "3 Alamo Heights Blvd", "city": "San Antonio", "state": "TX", "zip": "78209" }, "phone": "(210) 555-0403", "orgId": "org-4" }
+    ]
+  }
+]

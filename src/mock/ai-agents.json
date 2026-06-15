@@ -1,0 +1,98 @@
+[
+  {
+    "id": "agent-receptionist",
+    "name": "AI Receptionist",
+    "description": "Books appointments and handles patient inquiries via phone",
+    "avatar": "🤖",
+    "status": "active",
+    "tasksToday": 47,
+    "successRate": 94,
+    "revenueToday": 3420,
+    "sparklineData": [38, 42, 35, 51, 44, 47, 47],
+    "currentActivity": "Booking Sarah Johnson for cleaning - Friday 10AM"
+  },
+  {
+    "id": "agent-scribe",
+    "name": "AI Scribe",
+    "description": "Generates SOAP notes and clinical documentation from voice",
+    "avatar": "📋",
+    "status": "active",
+    "tasksToday": 23,
+    "successRate": 97,
+    "revenueToday": 0,
+    "sparklineData": [18, 21, 19, 24, 22, 23, 23],
+    "currentActivity": "Generating SOAP note for Dr. Martinez - Patient PAT-0023"
+  },
+  {
+    "id": "agent-insurance",
+    "name": "AI Insurance",
+    "description": "Verifies coverage and handles pre-authorizations",
+    "avatar": "🛡️",
+    "status": "active",
+    "tasksToday": 31,
+    "successRate": 89,
+    "revenueToday": 0,
+    "sparklineData": [25, 28, 30, 29, 33, 31, 31],
+    "currentActivity": "Verifying Delta Dental coverage for PAT-0056"
+  },
+  {
+    "id": "agent-claims",
+    "name": "AI Claims",
+    "description": "Prepares, submits and appeals insurance claims",
+    "avatar": "💳",
+    "status": "active",
+    "tasksToday": 18,
+    "successRate": 91,
+    "revenueToday": 24800,
+    "sparklineData": [14, 17, 15, 19, 18, 18, 18],
+    "currentActivity": "Submitting claim CLM-0089 to Cigna - $1,240"
+  },
+  {
+    "id": "agent-recall",
+    "name": "AI Recall",
+    "description": "Sends personalized recall reminders and reactivation campaigns",
+    "avatar": "📱",
+    "status": "active",
+    "tasksToday": 124,
+    "successRate": 76,
+    "revenueToday": 8900,
+    "sparklineData": [98, 110, 105, 118, 120, 124, 124],
+    "currentActivity": "Sending recall SMS to 14 patients overdue for cleaning"
+  },
+  {
+    "id": "agent-billing",
+    "name": "AI Billing",
+    "description": "Manages AR, sends statements and follows up on balances",
+    "avatar": "💰",
+    "status": "active",
+    "tasksToday": 34,
+    "successRate": 82,
+    "revenueToday": 12300,
+    "sparklineData": [28, 31, 29, 35, 33, 34, 34],
+    "currentActivity": "Sending 90-day statement to 8 overdue accounts"
+  },
+  {
+    "id": "agent-revenue",
+    "name": "AI Revenue",
+    "description": "Identifies revenue opportunities and unscheduled treatment",
+    "avatar": "📈",
+    "status": "idle",
+    "tasksToday": 12,
+    "successRate": 88,
+    "revenueToday": 0,
+    "sparklineData": [8, 10, 9, 11, 12, 12, 12],
+    "currentActivity": null
+  },
+  {
+    "id": "agent-copilot",
+    "name": "CEO Copilot",
+    "description": "Answers executive questions with AI-powered practice insights",
+    "avatar": "🧠",
+    "status": "active",
+    "tasksToday": 8,
+    "successRate": 100,
+    "revenueToday": 0,
+    "sparklineData": [5, 6, 7, 8, 8, 8, 8],
+    "currentActivity": "Answering: Where are our revenue opportunities?"
+  }
+]

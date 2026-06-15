@@ -1,0 +1,4158 @@
+[
+  {
+    "id": "INV-0001",
+    "patientId": "PAT-0058",
+    "patientName": "Jackson Hernandez",
+    "clinicId": "clinic-4b",
+    "date": "2025-07-14",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#8"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#5"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 2665,
+    "insurancePaid": 2105,
+    "patientPaid": 560,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-03-25",
+    "paymentHistory": [
+      {
+        "id": "pay-1",
+        "date": "2025-09-16",
+        "amount": 560,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0002",
+    "patientId": "PAT-0086",
+    "patientName": "Noah Miller",
+    "clinicId": "clinic-3a",
+    "date": "2025-05-07",
+    "procedures": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 2400,
+    "insurancePaid": 1488,
+    "patientPaid": 912,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-07-07",
+    "paymentHistory": [
+      {
+        "id": "pay-2",
+        "date": "2024-11-28",
+        "amount": 912,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0003",
+    "patientId": "PAT-0002",
+    "patientName": "Riley Young",
+    "clinicId": "clinic-4a",
+    "date": "2024-02-06",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#15"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#8"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#25"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 580,
+    "insurancePaid": 261,
+    "patientPaid": 0,
+    "balance": 319,
+    "status": "Overdue",
+    "dueDate": "2025-07-15",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0004",
+    "patientId": "PAT-0071",
+    "patientName": "Miguel Robinson",
+    "clinicId": "clinic-4b",
+    "date": "2025-10-09",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 145,
+    "insurancePaid": 80,
+    "patientPaid": 0,
+    "balance": 65,
+    "status": "Overdue",
+    "dueDate": "2024-06-29",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0005",
+    "patientId": "PAT-0048",
+    "patientName": "Divya Johnson",
+    "clinicId": "clinic-3a",
+    "date": "2024-05-22",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#31"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#6"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#31"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#8"
+      }
+    ],
+    "totalBilled": 8265,
+    "insurancePaid": 4463,
+    "patientPaid": 0,
+    "balance": 3802,
+    "status": "Overdue",
+    "dueDate": "2024-08-28",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0006",
+    "patientId": "PAT-0068",
+    "patientName": "Eleanor Sanchez",
+    "clinicId": "clinic-4a",
+    "date": "2025-10-16",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 185,
+    "insurancePaid": 89,
+    "patientPaid": 0,
+    "balance": 96,
+    "status": "Overdue",
+    "dueDate": "2024-08-20",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0007",
+    "patientId": "PAT-0038",
+    "patientName": "Isabella Ali",
+    "clinicId": "clinic-1c",
+    "date": "2025-12-19",
+    "procedures": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#18"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 3600,
+    "insurancePaid": 1764,
+    "patientPaid": 0,
+    "balance": 1836,
+    "status": "Overdue",
+    "dueDate": "2024-02-23",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0008",
+    "patientId": "PAT-0075",
+    "patientName": "Elijah Kumar",
+    "clinicId": "clinic-4b",
+    "date": "2024-03-11",
+    "procedures": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#12"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#31"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 8250,
+    "insurancePaid": 3795,
+    "patientPaid": 0,
+    "balance": 4455,
+    "status": "Overdue",
+    "dueDate": "2025-06-17",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0009",
+    "patientId": "PAT-0062",
+    "patientName": "Diego Young",
+    "clinicId": "clinic-2d",
+    "date": "2025-07-10",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#28"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#8"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 5750,
+    "insurancePaid": 2645,
+    "patientPaid": 1553,
+    "balance": 1552,
+    "status": "Partial",
+    "dueDate": "2025-12-18",
+    "paymentHistory": [
+      {
+        "id": "pay-9",
+        "date": "2024-09-22",
+        "amount": 1553,
+        "method": "CareCredit",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0010",
+    "patientId": "PAT-0038",
+    "patientName": "Isabella Ali",
+    "clinicId": "clinic-1c",
+    "date": "2024-02-03",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#11"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#18"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 515,
+    "insurancePaid": 335,
+    "patientPaid": 90,
+    "balance": 90,
+    "status": "Partial",
+    "dueDate": "2024-06-24",
+    "paymentHistory": [
+      {
+        "id": "pay-10",
+        "date": "2025-06-29",
+        "amount": 90,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0011",
+    "patientId": "PAT-0027",
+    "patientName": "Lily Nelson",
+    "clinicId": "clinic-2e",
+    "date": "2025-12-18",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 65,
+    "insurancePaid": 48,
+    "patientPaid": 0,
+    "balance": 17,
+    "status": "Overdue",
+    "dueDate": "2024-07-27",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0012",
+    "patientId": "PAT-0048",
+    "patientName": "Divya Johnson",
+    "clinicId": "clinic-3a",
+    "date": "2024-09-05",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 65,
+    "insurancePaid": 33,
+    "patientPaid": 32,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2024-09-22",
+    "paymentHistory": [
+      {
+        "id": "pay-12",
+        "date": "2024-01-15",
+        "amount": 32,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0013",
+    "patientId": "PAT-0045",
+    "patientName": "Ava Clark",
+    "clinicId": "clinic-2a",
+    "date": "2024-02-16",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 1200,
+    "insurancePaid": 672,
+    "patientPaid": 0,
+    "balance": 528,
+    "status": "Overdue",
+    "dueDate": "2025-11-01",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0014",
+    "patientId": "PAT-0088",
+    "patientName": "Harper Ahmed",
+    "clinicId": "clinic-3b",
+    "date": "2025-07-10",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 895,
+    "insurancePaid": 376,
+    "patientPaid": 0,
+    "balance": 519,
+    "status": "Overdue",
+    "dueDate": "2025-03-05",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0015",
+    "patientId": "PAT-0033",
+    "patientName": "Malik Hall",
+    "clinicId": "clinic-4b",
+    "date": "2024-02-28",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#6"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#7"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 6885,
+    "insurancePaid": 4131,
+    "patientPaid": 0,
+    "balance": 2754,
+    "status": "Overdue",
+    "dueDate": "2024-10-20",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0016",
+    "patientId": "PAT-0023",
+    "patientName": "Ava Walker",
+    "clinicId": "clinic-1b",
+    "date": "2025-10-28",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#28"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 470,
+    "insurancePaid": 207,
+    "patientPaid": 132,
+    "balance": 131,
+    "status": "Partial",
+    "dueDate": "2025-01-09",
+    "paymentHistory": [
+      {
+        "id": "pay-16",
+        "date": "2025-04-17",
+        "amount": 132,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0017",
+    "patientId": "PAT-0037",
+    "patientName": "Janelle Gupta",
+    "clinicId": "clinic-2d",
+    "date": "2025-08-17",
+    "procedures": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#15"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#30"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#11"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 3475,
+    "insurancePaid": 2259,
+    "patientPaid": 1216,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-05-30",
+    "paymentHistory": [
+      {
+        "id": "pay-17",
+        "date": "2024-02-26",
+        "amount": 1216,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0018",
+    "patientId": "PAT-0010",
+    "patientName": "Chloe Rivera",
+    "clinicId": "clinic-3a",
+    "date": "2025-06-22",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#30"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 1465,
+    "insurancePaid": 923,
+    "patientPaid": 271,
+    "balance": 271,
+    "status": "Partial",
+    "dueDate": "2025-01-23",
+    "paymentHistory": [
+      {
+        "id": "pay-18",
+        "date": "2024-10-04",
+        "amount": 271,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0019",
+    "patientId": "PAT-0072",
+    "patientName": "Kenji Martin",
+    "clinicId": "clinic-1a",
+    "date": "2024-08-09",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#23"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#6"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 5800,
+    "insurancePaid": 2320,
+    "patientPaid": 1740,
+    "balance": 1740,
+    "status": "Partial",
+    "dueDate": "2025-05-10",
+    "paymentHistory": [
+      {
+        "id": "pay-19",
+        "date": "2025-06-16",
+        "amount": 1740,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0020",
+    "patientId": "PAT-0045",
+    "patientName": "Ava Clark",
+    "clinicId": "clinic-2a",
+    "date": "2024-10-18",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#18"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#31"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#28"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 3285,
+    "insurancePaid": 2431,
+    "patientPaid": 0,
+    "balance": 854,
+    "status": "Overdue",
+    "dueDate": "2024-10-08",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0021",
+    "patientId": "PAT-0039",
+    "patientName": "Thomas Green",
+    "clinicId": "clinic-1c",
+    "date": "2025-12-02",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#25"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#22"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#24"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 1715,
+    "insurancePaid": 1080,
+    "patientPaid": 318,
+    "balance": 317,
+    "status": "Partial",
+    "dueDate": "2025-06-07",
+    "paymentHistory": [
+      {
+        "id": "pay-21",
+        "date": "2024-10-28",
+        "amount": 318,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0022",
+    "patientId": "PAT-0001",
+    "patientName": "Kenji Rivera",
+    "clinicId": "clinic-1c",
+    "date": "2024-03-31",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 115,
+    "insurancePaid": 75,
+    "patientPaid": 40,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-01-13",
+    "paymentHistory": [
+      {
+        "id": "pay-22",
+        "date": "2024-12-04",
+        "amount": 40,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0023",
+    "patientId": "PAT-0042",
+    "patientName": "Mia Thomas",
+    "clinicId": "clinic-2c",
+    "date": "2024-11-23",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#8"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#15"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#8"
+      }
+    ],
+    "totalBilled": 1640,
+    "insurancePaid": 869,
+    "patientPaid": 0,
+    "balance": 771,
+    "status": "Overdue",
+    "dueDate": "2025-06-24",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0024",
+    "patientId": "PAT-0055",
+    "patientName": "Hana Chen",
+    "clinicId": "clinic-1a",
+    "date": "2024-11-29",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#13"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#22"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 6765,
+    "insurancePaid": 5209,
+    "patientPaid": 0,
+    "balance": 1556,
+    "status": "Overdue",
+    "dueDate": "2025-12-05",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0025",
+    "patientId": "PAT-0044",
+    "patientName": "Jennifer Kumar",
+    "clinicId": "clinic-1c",
+    "date": "2025-09-07",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 145,
+    "insurancePaid": 110,
+    "patientPaid": 35,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-01-27",
+    "paymentHistory": [
+      {
+        "id": "pay-25",
+        "date": "2024-01-19",
+        "amount": 35,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0026",
+    "patientId": "PAT-0053",
+    "patientName": "Juan Brown",
+    "clinicId": "clinic-4c",
+    "date": "2025-05-11",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 895,
+    "insurancePaid": 582,
+    "patientPaid": 313,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-06-06",
+    "paymentHistory": [
+      {
+        "id": "pay-26",
+        "date": "2024-09-26",
+        "amount": 313,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0027",
+    "patientId": "PAT-0046",
+    "patientName": "Emma Patel",
+    "clinicId": "clinic-4b",
+    "date": "2024-12-01",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 5500,
+    "insurancePaid": 3025,
+    "patientPaid": 1238,
+    "balance": 1237,
+    "status": "Partial",
+    "dueDate": "2025-04-13",
+    "paymentHistory": [
+      {
+        "id": "pay-27",
+        "date": "2024-04-08",
+        "amount": 1238,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0028",
+    "patientId": "PAT-0039",
+    "patientName": "Thomas Green",
+    "clinicId": "clinic-1c",
+    "date": "2024-07-29",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#31"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 1245,
+    "insurancePaid": 896,
+    "patientPaid": 0,
+    "balance": 349,
+    "status": "Overdue",
+    "dueDate": "2025-02-23",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0029",
+    "patientId": "PAT-0015",
+    "patientName": "Elijah Harris",
+    "clinicId": "clinic-1b",
+    "date": "2024-06-02",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 895,
+    "insurancePaid": 680,
+    "patientPaid": 0,
+    "balance": 215,
+    "status": "Overdue",
+    "dueDate": "2024-08-19",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0030",
+    "patientId": "PAT-0081",
+    "patientName": "James Hassan",
+    "clinicId": "clinic-2c",
+    "date": "2025-12-11",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#20"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#10"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#28"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 800,
+    "insurancePaid": 368,
+    "patientPaid": 0,
+    "balance": 432,
+    "status": "Overdue",
+    "dueDate": "2025-11-19",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0031",
+    "patientId": "PAT-0003",
+    "patientName": "Logan Campbell",
+    "clinicId": "clinic-2c",
+    "date": "2024-06-29",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#23"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#27"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#12"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 13515,
+    "insurancePaid": 8379,
+    "patientPaid": 0,
+    "balance": 5136,
+    "status": "Overdue",
+    "dueDate": "2025-04-18",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0032",
+    "patientId": "PAT-0009",
+    "patientName": "Sarah Hall",
+    "clinicId": "clinic-2b",
+    "date": "2024-08-15",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 895,
+    "insurancePaid": 421,
+    "patientPaid": 0,
+    "balance": 474,
+    "status": "Overdue",
+    "dueDate": "2024-09-01",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0033",
+    "patientId": "PAT-0027",
+    "patientName": "Lily Nelson",
+    "clinicId": "clinic-2e",
+    "date": "2024-01-06",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 1200,
+    "insurancePaid": 876,
+    "patientPaid": 162,
+    "balance": 162,
+    "status": "Partial",
+    "dueDate": "2025-07-14",
+    "paymentHistory": [
+      {
+        "id": "pay-33",
+        "date": "2024-05-30",
+        "amount": 162,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0034",
+    "patientId": "PAT-0080",
+    "patientName": "William Shah",
+    "clinicId": "clinic-4c",
+    "date": "2024-04-18",
+    "procedures": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#21"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#30"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#21"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 1235,
+    "insurancePaid": 741,
+    "patientPaid": 0,
+    "balance": 494,
+    "status": "Overdue",
+    "dueDate": "2025-04-01",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0035",
+    "patientId": "PAT-0012",
+    "patientName": "Janelle Torres",
+    "clinicId": "clinic-1a",
+    "date": "2024-12-18",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#22"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 450,
+    "insurancePaid": 203,
+    "patientPaid": 247,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2024-03-06",
+    "paymentHistory": [
+      {
+        "id": "pay-35",
+        "date": "2024-01-08",
+        "amount": 247,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0036",
+    "patientId": "PAT-0036",
+    "patientName": "John Rodriguez",
+    "clinicId": "clinic-4c",
+    "date": "2024-04-15",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#11"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#31"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 4100,
+    "insurancePaid": 2132,
+    "patientPaid": 0,
+    "balance": 1968,
+    "status": "Overdue",
+    "dueDate": "2025-03-21",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0037",
+    "patientId": "PAT-0065",
+    "patientName": "Logan Nguyen",
+    "clinicId": "clinic-2e",
+    "date": "2025-12-05",
+    "procedures": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#14"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 535,
+    "insurancePaid": 251,
+    "patientPaid": 142,
+    "balance": 142,
+    "status": "Partial",
+    "dueDate": "2024-06-23",
+    "paymentHistory": [
+      {
+        "id": "pay-37",
+        "date": "2024-05-30",
+        "amount": 142,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0038",
+    "patientId": "PAT-0050",
+    "patientName": "Darius Baker",
+    "clinicId": "clinic-2c",
+    "date": "2024-07-23",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#25"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 1535,
+    "insurancePaid": 1182,
+    "patientPaid": 177,
+    "balance": 176,
+    "status": "Partial",
+    "dueDate": "2025-06-02",
+    "paymentHistory": [
+      {
+        "id": "pay-38",
+        "date": "2024-07-20",
+        "amount": 177,
+        "method": "CareCredit",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0039",
+    "patientId": "PAT-0047",
+    "patientName": "Miguel Shah",
+    "clinicId": "clinic-4c",
+    "date": "2025-12-17",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#26"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 470,
+    "insurancePaid": 212,
+    "patientPaid": 0,
+    "balance": 258,
+    "status": "Overdue",
+    "dueDate": "2024-10-01",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0040",
+    "patientId": "PAT-0099",
+    "patientName": "Marcus Jackson",
+    "clinicId": "clinic-2e",
+    "date": "2024-07-05",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#25"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#21"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 4100,
+    "insurancePaid": 2091,
+    "patientPaid": 0,
+    "balance": 2009,
+    "status": "Overdue",
+    "dueDate": "2024-02-18",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0041",
+    "patientId": "PAT-0095",
+    "patientName": "Elizabeth Jefferson",
+    "clinicId": "clinic-4c",
+    "date": "2024-06-07",
+    "procedures": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#10"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#19"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 2150,
+    "insurancePaid": 1591,
+    "patientPaid": 280,
+    "balance": 279,
+    "status": "Partial",
+    "dueDate": "2025-03-06",
+    "paymentHistory": [
+      {
+        "id": "pay-41",
+        "date": "2024-05-12",
+        "amount": 280,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0042",
+    "patientId": "PAT-0091",
+    "patientName": "Juan Lee",
+    "clinicId": "clinic-1b",
+    "date": "2024-12-05",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#4"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#10"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#8"
+      }
+    ],
+    "totalBilled": 1730,
+    "insurancePaid": 1280,
+    "patientPaid": 0,
+    "balance": 450,
+    "status": "Overdue",
+    "dueDate": "2025-01-06",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0043",
+    "patientId": "PAT-0073",
+    "patientName": "Charlotte Garcia",
+    "clinicId": "clinic-2d",
+    "date": "2024-07-18",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#8"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 1080,
+    "insurancePaid": 864,
+    "patientPaid": 108,
+    "balance": 108,
+    "status": "Partial",
+    "dueDate": "2025-06-09",
+    "paymentHistory": [
+      {
+        "id": "pay-43",
+        "date": "2024-05-23",
+        "amount": 108,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0044",
+    "patientId": "PAT-0048",
+    "patientName": "Divya Johnson",
+    "clinicId": "clinic-3a",
+    "date": "2024-01-08",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 65,
+    "insurancePaid": 45,
+    "patientPaid": 10,
+    "balance": 10,
+    "status": "Partial",
+    "dueDate": "2025-06-25",
+    "paymentHistory": [
+      {
+        "id": "pay-44",
+        "date": "2025-08-23",
+        "amount": 10,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0045",
+    "patientId": "PAT-0079",
+    "patientName": "Thomas Lopez",
+    "clinicId": "clinic-4b",
+    "date": "2024-10-13",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 185,
+    "insurancePaid": 89,
+    "patientPaid": 0,
+    "balance": 96,
+    "status": "Overdue",
+    "dueDate": "2024-09-23",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0046",
+    "patientId": "PAT-0032",
+    "patientName": "Janelle Jones",
+    "clinicId": "clinic-3b",
+    "date": "2024-03-31",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#7"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 535,
+    "insurancePaid": 278,
+    "patientPaid": 129,
+    "balance": 128,
+    "status": "Partial",
+    "dueDate": "2024-02-19",
+    "paymentHistory": [
+      {
+        "id": "pay-46",
+        "date": "2024-02-18",
+        "amount": 129,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0047",
+    "patientId": "PAT-0085",
+    "patientName": "Noah Nguyen",
+    "clinicId": "clinic-4c",
+    "date": "2024-04-21",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#5"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 535,
+    "insurancePaid": 214,
+    "patientPaid": 0,
+    "balance": 321,
+    "status": "Overdue",
+    "dueDate": "2025-08-28",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0048",
+    "patientId": "PAT-0064",
+    "patientName": "Riley Park",
+    "clinicId": "clinic-3b",
+    "date": "2025-03-12",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#4"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#15"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 6035,
+    "insurancePaid": 3983,
+    "patientPaid": 0,
+    "balance": 2052,
+    "status": "Overdue",
+    "dueDate": "2024-10-02",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0049",
+    "patientId": "PAT-0091",
+    "patientName": "Juan Lee",
+    "clinicId": "clinic-1b",
+    "date": "2024-12-19",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#4"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#26"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 1430,
+    "insurancePaid": 930,
+    "patientPaid": 0,
+    "balance": 500,
+    "status": "Overdue",
+    "dueDate": "2025-01-08",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0050",
+    "patientId": "PAT-0074",
+    "patientName": "Sofia Young",
+    "clinicId": "clinic-2c",
+    "date": "2025-01-27",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#5"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#4"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#25"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 5795,
+    "insurancePaid": 3999,
+    "patientPaid": 0,
+    "balance": 1796,
+    "status": "Overdue",
+    "dueDate": "2025-04-04",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0051",
+    "patientId": "PAT-0092",
+    "patientName": "Vikram Mitchell",
+    "clinicId": "clinic-2d",
+    "date": "2024-07-25",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#3"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 210,
+    "insurancePaid": 92,
+    "patientPaid": 0,
+    "balance": 118,
+    "status": "Overdue",
+    "dueDate": "2024-04-04",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0052",
+    "patientId": "PAT-0082",
+    "patientName": "Tamika Lewis",
+    "clinicId": "clinic-2c",
+    "date": "2024-01-03",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#18"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 6850,
+    "insurancePaid": 4658,
+    "patientPaid": 0,
+    "balance": 2192,
+    "status": "Overdue",
+    "dueDate": "2025-08-10",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0053",
+    "patientId": "PAT-0014",
+    "patientName": "Ana Adams",
+    "clinicId": "clinic-1a",
+    "date": "2024-04-04",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#5"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#31"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#6"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 1610,
+    "insurancePaid": 1224,
+    "patientPaid": 386,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-05-02",
+    "paymentHistory": [
+      {
+        "id": "pay-53",
+        "date": "2024-04-22",
+        "amount": 386,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0054",
+    "patientId": "PAT-0092",
+    "patientName": "Vikram Mitchell",
+    "clinicId": "clinic-2d",
+    "date": "2025-07-27",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#30"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#15"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 1815,
+    "insurancePaid": 908,
+    "patientPaid": 0,
+    "balance": 907,
+    "status": "Overdue",
+    "dueDate": "2024-03-08",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0055",
+    "patientId": "PAT-0009",
+    "patientName": "Sarah Hall",
+    "clinicId": "clinic-2b",
+    "date": "2024-12-17",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#2"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 1465,
+    "insurancePaid": 630,
+    "patientPaid": 0,
+    "balance": 835,
+    "status": "Overdue",
+    "dueDate": "2025-02-12",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0056",
+    "patientId": "PAT-0018",
+    "patientName": "Mia Allen",
+    "clinicId": "clinic-3b",
+    "date": "2025-08-31",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#29"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#26"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 8085,
+    "insurancePaid": 5013,
+    "patientPaid": 0,
+    "balance": 3072,
+    "status": "Overdue",
+    "dueDate": "2025-03-13",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0057",
+    "patientId": "PAT-0013",
+    "patientName": "Keisha Patel",
+    "clinicId": "clinic-2d",
+    "date": "2024-04-18",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#27"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 465,
+    "insurancePaid": 233,
+    "patientPaid": 116,
+    "balance": 116,
+    "status": "Partial",
+    "dueDate": "2024-02-04",
+    "paymentHistory": [
+      {
+        "id": "pay-57",
+        "date": "2024-12-19",
+        "amount": 116,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0058",
+    "patientId": "PAT-0083",
+    "patientName": "Fatima Nelson",
+    "clinicId": "clinic-1a",
+    "date": "2024-04-29",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#25"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 315,
+    "insurancePaid": 189,
+    "patientPaid": 0,
+    "balance": 126,
+    "status": "Overdue",
+    "dueDate": "2024-02-27",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0059",
+    "patientId": "PAT-0077",
+    "patientName": "Luis Clark",
+    "clinicId": "clinic-1c",
+    "date": "2025-11-30",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#14"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 250,
+    "insurancePaid": 113,
+    "patientPaid": 137,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-06-16",
+    "paymentHistory": [
+      {
+        "id": "pay-59",
+        "date": "2024-07-31",
+        "amount": 137,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0060",
+    "patientId": "PAT-0075",
+    "patientName": "Elijah Kumar",
+    "clinicId": "clinic-4b",
+    "date": "2025-05-06",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#27"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#20"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 3560,
+    "insurancePaid": 1922,
+    "patientPaid": 0,
+    "balance": 1638,
+    "status": "Overdue",
+    "dueDate": "2025-07-27",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0061",
+    "patientId": "PAT-0001",
+    "patientName": "Kenji Rivera",
+    "clinicId": "clinic-1c",
+    "date": "2024-10-11",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#21"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 2245,
+    "insurancePaid": 1235,
+    "patientPaid": 1010,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2024-06-03",
+    "paymentHistory": [
+      {
+        "id": "pay-61",
+        "date": "2024-04-05",
+        "amount": 1010,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0062",
+    "patientId": "PAT-0039",
+    "patientName": "Thomas Green",
+    "clinicId": "clinic-1c",
+    "date": "2025-09-13",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#26"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#27"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 2935,
+    "insurancePaid": 1790,
+    "patientPaid": 0,
+    "balance": 1145,
+    "status": "Overdue",
+    "dueDate": "2025-09-20",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0063",
+    "patientId": "PAT-0001",
+    "patientName": "Kenji Rivera",
+    "clinicId": "clinic-1c",
+    "date": "2024-09-16",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#2"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 1900,
+    "insurancePaid": 836,
+    "patientPaid": 0,
+    "balance": 1064,
+    "status": "Overdue",
+    "dueDate": "2024-06-25",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0064",
+    "patientId": "PAT-0089",
+    "patientName": "David Davis",
+    "clinicId": "clinic-2a",
+    "date": "2025-06-21",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 895,
+    "insurancePaid": 573,
+    "patientPaid": 0,
+    "balance": 322,
+    "status": "Overdue",
+    "dueDate": "2025-02-28",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0065",
+    "patientId": "PAT-0099",
+    "patientName": "Marcus Jackson",
+    "clinicId": "clinic-2e",
+    "date": "2024-09-21",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#15"
+      }
+    ],
+    "totalBilled": 285,
+    "insurancePaid": 188,
+    "patientPaid": 0,
+    "balance": 97,
+    "status": "Overdue",
+    "dueDate": "2024-12-24",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0066",
+    "patientId": "PAT-0097",
+    "patientName": "Aaliyah Lewis",
+    "clinicId": "clinic-2d",
+    "date": "2025-02-14",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#5"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#21"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 515,
+    "insurancePaid": 340,
+    "patientPaid": 0,
+    "balance": 175,
+    "status": "Overdue",
+    "dueDate": "2025-07-20",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0067",
+    "patientId": "PAT-0059",
+    "patientName": "Lin Hassan",
+    "clinicId": "clinic-2b",
+    "date": "2024-11-21",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#2"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#13"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 1360,
+    "insurancePaid": 1047,
+    "patientPaid": 157,
+    "balance": 156,
+    "status": "Partial",
+    "dueDate": "2025-03-30",
+    "paymentHistory": [
+      {
+        "id": "pay-67",
+        "date": "2025-01-21",
+        "amount": 157,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0068",
+    "patientId": "PAT-0037",
+    "patientName": "Janelle Gupta",
+    "clinicId": "clinic-2d",
+    "date": "2025-11-18",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#9"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#4"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#31"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 3810,
+    "insurancePaid": 2591,
+    "patientPaid": 610,
+    "balance": 609,
+    "status": "Partial",
+    "dueDate": "2025-09-18",
+    "paymentHistory": [
+      {
+        "id": "pay-68",
+        "date": "2025-12-12",
+        "amount": 610,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0069",
+    "patientId": "PAT-0013",
+    "patientName": "Keisha Patel",
+    "clinicId": "clinic-2d",
+    "date": "2024-01-13",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#19"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 650,
+    "insurancePaid": 345,
+    "patientPaid": 0,
+    "balance": 305,
+    "status": "Overdue",
+    "dueDate": "2024-07-21",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0070",
+    "patientId": "PAT-0016",
+    "patientName": "Lily Allen",
+    "clinicId": "clinic-4a",
+    "date": "2024-11-13",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#30"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 1385,
+    "insurancePaid": 970,
+    "patientPaid": 0,
+    "balance": 415,
+    "status": "Overdue",
+    "dueDate": "2024-04-13",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0071",
+    "patientId": "PAT-0004",
+    "patientName": "Rosa Hassan",
+    "clinicId": "clinic-2c",
+    "date": "2024-05-09",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 1350,
+    "insurancePaid": 716,
+    "patientPaid": 0,
+    "balance": 634,
+    "status": "Overdue",
+    "dueDate": "2025-08-17",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0072",
+    "patientId": "PAT-0081",
+    "patientName": "James Hassan",
+    "clinicId": "clinic-2c",
+    "date": "2025-03-12",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#22"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#11"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 2580,
+    "insurancePaid": 1496,
+    "patientPaid": 1084,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-01-21",
+    "paymentHistory": [
+      {
+        "id": "pay-72",
+        "date": "2025-12-04",
+        "amount": 1084,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0073",
+    "patientId": "PAT-0043",
+    "patientName": "Diego Wilson",
+    "clinicId": "clinic-2a",
+    "date": "2024-10-24",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#6"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#30"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#30"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 3665,
+    "insurancePaid": 2346,
+    "patientPaid": 660,
+    "balance": 659,
+    "status": "Partial",
+    "dueDate": "2025-01-16",
+    "paymentHistory": [
+      {
+        "id": "pay-73",
+        "date": "2024-05-09",
+        "amount": 660,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0074",
+    "patientId": "PAT-0085",
+    "patientName": "Noah Nguyen",
+    "clinicId": "clinic-4c",
+    "date": "2024-08-10",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#26"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#27"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#8"
+      }
+    ],
+    "totalBilled": 6660,
+    "insurancePaid": 4529,
+    "patientPaid": 0,
+    "balance": 2131,
+    "status": "Overdue",
+    "dueDate": "2024-02-26",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0075",
+    "patientId": "PAT-0096",
+    "patientName": "Malik Robinson",
+    "clinicId": "clinic-1a",
+    "date": "2024-09-10",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 185,
+    "insurancePaid": 137,
+    "patientPaid": 0,
+    "balance": 48,
+    "status": "Overdue",
+    "dueDate": "2024-08-15",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0076",
+    "patientId": "PAT-0052",
+    "patientName": "Patricia Ramirez",
+    "clinicId": "clinic-3b",
+    "date": "2025-08-20",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#23"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 2245,
+    "insurancePaid": 1751,
+    "patientPaid": 0,
+    "balance": 494,
+    "status": "Overdue",
+    "dueDate": "2024-03-09",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0077",
+    "patientId": "PAT-0015",
+    "patientName": "Elijah Harris",
+    "clinicId": "clinic-1b",
+    "date": "2025-08-22",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#28"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#30"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#14"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 8150,
+    "insurancePaid": 4646,
+    "patientPaid": 3504,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2024-12-19",
+    "paymentHistory": [
+      {
+        "id": "pay-77",
+        "date": "2025-06-01",
+        "amount": 3504,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0078",
+    "patientId": "PAT-0045",
+    "patientName": "Ava Clark",
+    "clinicId": "clinic-2a",
+    "date": "2025-07-25",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 265,
+    "insurancePaid": 114,
+    "patientPaid": 0,
+    "balance": 151,
+    "status": "Overdue",
+    "dueDate": "2025-09-12",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0079",
+    "patientId": "PAT-0062",
+    "patientName": "Diego Young",
+    "clinicId": "clinic-2d",
+    "date": "2025-05-25",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#24"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#19"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 1845,
+    "insurancePaid": 1328,
+    "patientPaid": 517,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-10-13",
+    "paymentHistory": [
+      {
+        "id": "pay-79",
+        "date": "2025-01-11",
+        "amount": 517,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0080",
+    "patientId": "PAT-0060",
+    "patientName": "Latoya Moore",
+    "clinicId": "clinic-4b",
+    "date": "2024-08-18",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 1350,
+    "insurancePaid": 662,
+    "patientPaid": 0,
+    "balance": 688,
+    "status": "Overdue",
+    "dueDate": "2024-12-30",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0081",
+    "patientId": "PAT-0032",
+    "patientName": "Janelle Jones",
+    "clinicId": "clinic-3b",
+    "date": "2025-01-09",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#14"
+      }
+    ],
+    "totalBilled": 285,
+    "insurancePaid": 165,
+    "patientPaid": 0,
+    "balance": 120,
+    "status": "Overdue",
+    "dueDate": "2024-12-29",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0082",
+    "patientId": "PAT-0045",
+    "patientName": "Ava Clark",
+    "clinicId": "clinic-2a",
+    "date": "2025-03-26",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#9"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 380,
+    "insurancePaid": 171,
+    "patientPaid": 0,
+    "balance": 209,
+    "status": "Overdue",
+    "dueDate": "2025-10-28",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0083",
+    "patientId": "PAT-0083",
+    "patientName": "Fatima Nelson",
+    "clinicId": "clinic-1a",
+    "date": "2024-04-26",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#2"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 550,
+    "insurancePaid": 418,
+    "patientPaid": 0,
+    "balance": 132,
+    "status": "Overdue",
+    "dueDate": "2024-08-17",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0084",
+    "patientId": "PAT-0086",
+    "patientName": "Noah Miller",
+    "clinicId": "clinic-3a",
+    "date": "2024-09-28",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#8"
+      }
+    ],
+    "totalBilled": 550,
+    "insurancePaid": 270,
+    "patientPaid": 280,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2024-05-09",
+    "paymentHistory": [
+      {
+        "id": "pay-84",
+        "date": "2024-02-24",
+        "amount": 280,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0085",
+    "patientId": "PAT-0019",
+    "patientName": "Karen Jackson",
+    "clinicId": "clinic-1a",
+    "date": "2025-06-27",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 185,
+    "insurancePaid": 87,
+    "patientPaid": 0,
+    "balance": 98,
+    "status": "Overdue",
+    "dueDate": "2025-11-06",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0086",
+    "patientId": "PAT-0013",
+    "patientName": "Keisha Patel",
+    "clinicId": "clinic-2d",
+    "date": "2025-12-30",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#18"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 1040,
+    "insurancePaid": 468,
+    "patientPaid": 0,
+    "balance": 572,
+    "status": "Overdue",
+    "dueDate": "2025-07-22",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0087",
+    "patientId": "PAT-0029",
+    "patientName": "Tamika Sanchez",
+    "clinicId": "clinic-2d",
+    "date": "2024-12-15",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#20"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#9"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#4"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 11470,
+    "insurancePaid": 6079,
+    "patientPaid": 0,
+    "balance": 5391,
+    "status": "Overdue",
+    "dueDate": "2025-08-16",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0088",
+    "patientId": "PAT-0011",
+    "patientName": "Ava Thomas",
+    "clinicId": "clinic-4a",
+    "date": "2025-04-11",
+    "procedures": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#20"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#12"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#23"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 3665,
+    "insurancePaid": 1539,
+    "patientPaid": 0,
+    "balance": 2126,
+    "status": "Overdue",
+    "dueDate": "2025-02-13",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0089",
+    "patientId": "PAT-0082",
+    "patientName": "Tamika Lewis",
+    "clinicId": "clinic-2c",
+    "date": "2024-12-12",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 185,
+    "insurancePaid": 102,
+    "patientPaid": 0,
+    "balance": 83,
+    "status": "Overdue",
+    "dueDate": "2025-10-04",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0090",
+    "patientId": "PAT-0040",
+    "patientName": "Ananya Green",
+    "clinicId": "clinic-4c",
+    "date": "2025-10-18",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 5500,
+    "insurancePaid": 2640,
+    "patientPaid": 0,
+    "balance": 2860,
+    "status": "Overdue",
+    "dueDate": "2024-01-07",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0091",
+    "patientId": "PAT-0017",
+    "patientName": "Jennifer Thomas",
+    "clinicId": "clinic-3b",
+    "date": "2025-11-21",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#25"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 380,
+    "insurancePaid": 293,
+    "patientPaid": 87,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-12-23",
+    "paymentHistory": [
+      {
+        "id": "pay-91",
+        "date": "2025-05-30",
+        "amount": 87,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0092",
+    "patientId": "PAT-0054",
+    "patientName": "Tyrone Perez",
+    "clinicId": "clinic-4a",
+    "date": "2024-03-31",
+    "procedures": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#31"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#13"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#28"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 2885,
+    "insurancePaid": 1414,
+    "patientPaid": 0,
+    "balance": 1471,
+    "status": "Overdue",
+    "dueDate": "2025-01-23",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0093",
+    "patientId": "PAT-0015",
+    "patientName": "Elijah Harris",
+    "clinicId": "clinic-1b",
+    "date": "2024-11-30",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#23"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 1080,
+    "insurancePaid": 583,
+    "patientPaid": 497,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-02-09",
+    "paymentHistory": [
+      {
+        "id": "pay-93",
+        "date": "2025-05-08",
+        "amount": 497,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0094",
+    "patientId": "PAT-0053",
+    "patientName": "Juan Brown",
+    "clinicId": "clinic-4c",
+    "date": "2024-01-14",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#26"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#9"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#28"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 3850,
+    "insurancePaid": 2541,
+    "patientPaid": 1309,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-01-01",
+    "paymentHistory": [
+      {
+        "id": "pay-94",
+        "date": "2024-06-04",
+        "amount": 1309,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0095",
+    "patientId": "PAT-0016",
+    "patientName": "Lily Allen",
+    "clinicId": "clinic-4a",
+    "date": "2025-02-19",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#8"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#25"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 600,
+    "insurancePaid": 402,
+    "patientPaid": 0,
+    "balance": 198,
+    "status": "Overdue",
+    "dueDate": "2024-07-22",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0096",
+    "patientId": "PAT-0057",
+    "patientName": "Penelope Kumar",
+    "clinicId": "clinic-4c",
+    "date": "2024-06-11",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 285,
+    "insurancePaid": 168,
+    "patientPaid": 0,
+    "balance": 117,
+    "status": "Overdue",
+    "dueDate": "2025-10-22",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0097",
+    "patientId": "PAT-0034",
+    "patientName": "Linda Campbell",
+    "clinicId": "clinic-1a",
+    "date": "2024-06-14",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#23"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#30"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 4950,
+    "insurancePaid": 2624,
+    "patientPaid": 2326,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2024-03-10",
+    "paymentHistory": [
+      {
+        "id": "pay-97",
+        "date": "2025-09-07",
+        "amount": 2326,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0098",
+    "patientId": "PAT-0071",
+    "patientName": "Miguel Robinson",
+    "clinicId": "clinic-4b",
+    "date": "2024-10-19",
+    "procedures": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#31"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#4"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#20"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 7930,
+    "insurancePaid": 3410,
+    "patientPaid": 0,
+    "balance": 4520,
+    "status": "Overdue",
+    "dueDate": "2024-09-14",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0099",
+    "patientId": "PAT-0067",
+    "patientName": "Diego King",
+    "clinicId": "clinic-3a",
+    "date": "2024-01-05",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 1200,
+    "insurancePaid": 576,
+    "patientPaid": 0,
+    "balance": 624,
+    "status": "Overdue",
+    "dueDate": "2024-06-25",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0100",
+    "patientId": "PAT-0070",
+    "patientName": "Hana Anderson",
+    "clinicId": "clinic-2c",
+    "date": "2024-11-21",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 185,
+    "insurancePaid": 105,
+    "patientPaid": 0,
+    "balance": 80,
+    "status": "Overdue",
+    "dueDate": "2024-05-26",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0101",
+    "patientId": "PAT-0085",
+    "patientName": "Noah Nguyen",
+    "clinicId": "clinic-4c",
+    "date": "2025-01-01",
+    "procedures": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#24"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#18"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#15"
+      }
+    ],
+    "totalBilled": 2185,
+    "insurancePaid": 1748,
+    "patientPaid": 0,
+    "balance": 437,
+    "status": "Overdue",
+    "dueDate": "2024-06-24",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0102",
+    "patientId": "PAT-0061",
+    "patientName": "Ava Wright",
+    "clinicId": "clinic-4b",
+    "date": "2024-01-04",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#22"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#20"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#12"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 2930,
+    "insurancePaid": 1260,
+    "patientPaid": 1670,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-04-19",
+    "paymentHistory": [
+      {
+        "id": "pay-102",
+        "date": "2024-05-26",
+        "amount": 1670,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0103",
+    "patientId": "PAT-0078",
+    "patientName": "Hana Park",
+    "clinicId": "clinic-1a",
+    "date": "2025-02-28",
+    "procedures": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 1200,
+    "insurancePaid": 840,
+    "patientPaid": 0,
+    "balance": 360,
+    "status": "Overdue",
+    "dueDate": "2024-10-29",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0104",
+    "patientId": "PAT-0007",
+    "patientName": "Ana Hernandez",
+    "clinicId": "clinic-1a",
+    "date": "2025-03-11",
+    "procedures": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#2"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#21"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#28"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 3285,
+    "insurancePaid": 2497,
+    "patientPaid": 0,
+    "balance": 788,
+    "status": "Overdue",
+    "dueDate": "2025-10-08",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0105",
+    "patientId": "PAT-0068",
+    "patientName": "Eleanor Sanchez",
+    "clinicId": "clinic-4a",
+    "date": "2024-08-31",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#22"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 130,
+    "insurancePaid": 72,
+    "patientPaid": 29,
+    "balance": 29,
+    "status": "Partial",
+    "dueDate": "2024-12-20",
+    "paymentHistory": [
+      {
+        "id": "pay-105",
+        "date": "2025-07-10",
+        "amount": 29,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0106",
+    "patientId": "PAT-0050",
+    "patientName": "Darius Baker",
+    "clinicId": "clinic-2c",
+    "date": "2024-11-26",
+    "procedures": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#12"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 2685,
+    "insurancePaid": 1423,
+    "patientPaid": 631,
+    "balance": 631,
+    "status": "Partial",
+    "dueDate": "2025-01-16",
+    "paymentHistory": [
+      {
+        "id": "pay-106",
+        "date": "2024-06-06",
+        "amount": 631,
+        "method": "CareCredit",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0107",
+    "patientId": "PAT-0096",
+    "patientName": "Malik Robinson",
+    "clinicId": "clinic-1a",
+    "date": "2025-01-27",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 65,
+    "insurancePaid": 44,
+    "patientPaid": 21,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-05-23",
+    "paymentHistory": [
+      {
+        "id": "pay-107",
+        "date": "2024-09-21",
+        "amount": 21,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0108",
+    "patientId": "PAT-0033",
+    "patientName": "Malik Hall",
+    "clinicId": "clinic-4b",
+    "date": "2024-12-19",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#3"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#11"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#13"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 6065,
+    "insurancePaid": 4427,
+    "patientPaid": 0,
+    "balance": 1638,
+    "status": "Overdue",
+    "dueDate": "2025-11-07",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0109",
+    "patientId": "PAT-0061",
+    "patientName": "Ava Wright",
+    "clinicId": "clinic-4b",
+    "date": "2025-08-27",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#26"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#28"
+      }
+    ],
+    "totalBilled": 1610,
+    "insurancePaid": 966,
+    "patientPaid": 644,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-01-30",
+    "paymentHistory": [
+      {
+        "id": "pay-109",
+        "date": "2025-02-20",
+        "amount": 644,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0110",
+    "patientId": "PAT-0031",
+    "patientName": "Sofia Young",
+    "clinicId": "clinic-4b",
+    "date": "2024-10-23",
+    "procedures": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#14"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#3"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#29"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#15"
+      }
+    ],
+    "totalBilled": 1950,
+    "insurancePaid": 1326,
+    "patientPaid": 312,
+    "balance": 312,
+    "status": "Partial",
+    "dueDate": "2024-01-17",
+    "paymentHistory": [
+      {
+        "id": "pay-110",
+        "date": "2024-11-24",
+        "amount": 312,
+        "method": "Cash",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0111",
+    "patientId": "PAT-0067",
+    "patientName": "Diego King",
+    "clinicId": "clinic-3a",
+    "date": "2024-03-09",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#19"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#11"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#19"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#31"
+      }
+    ],
+    "totalBilled": 6135,
+    "insurancePaid": 2454,
+    "patientPaid": 0,
+    "balance": 3681,
+    "status": "Overdue",
+    "dueDate": "2024-06-15",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0112",
+    "patientId": "PAT-0020",
+    "patientName": "Susan Wright",
+    "clinicId": "clinic-2c",
+    "date": "2024-06-14",
+    "procedures": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#20"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 2550,
+    "insurancePaid": 1097,
+    "patientPaid": 1453,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-01-05",
+    "paymentHistory": [
+      {
+        "id": "pay-112",
+        "date": "2025-09-28",
+        "amount": 1453,
+        "method": "Credit Card",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0113",
+    "patientId": "PAT-0070",
+    "patientName": "Hana Anderson",
+    "clinicId": "clinic-2c",
+    "date": "2024-03-09",
+    "procedures": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#15"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 5685,
+    "insurancePaid": 3638,
+    "patientPaid": 0,
+    "balance": 2047,
+    "status": "Overdue",
+    "dueDate": "2024-01-03",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0114",
+    "patientId": "PAT-0041",
+    "patientName": "Karen Jackson",
+    "clinicId": "clinic-4a",
+    "date": "2024-09-24",
+    "procedures": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 145,
+    "insurancePaid": 93,
+    "patientPaid": 0,
+    "balance": 52,
+    "status": "Overdue",
+    "dueDate": "2025-03-25",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0115",
+    "patientId": "PAT-0093",
+    "patientName": "Lucas Walker",
+    "clinicId": "clinic-1b",
+    "date": "2025-12-29",
+    "procedures": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#10"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 5565,
+    "insurancePaid": 4285,
+    "patientPaid": 0,
+    "balance": 1280,
+    "status": "Overdue",
+    "dueDate": "2025-03-08",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0116",
+    "patientId": "PAT-0057",
+    "patientName": "Penelope Kumar",
+    "clinicId": "clinic-4c",
+    "date": "2024-01-05",
+    "procedures": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#3"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#11"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#31"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#14"
+      }
+    ],
+    "totalBilled": 1715,
+    "insurancePaid": 823,
+    "patientPaid": 446,
+    "balance": 446,
+    "status": "Partial",
+    "dueDate": "2025-03-12",
+    "paymentHistory": [
+      {
+        "id": "pay-116",
+        "date": "2025-11-14",
+        "amount": 446,
+        "method": "ACH",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0117",
+    "patientId": "PAT-0046",
+    "patientName": "Emma Patel",
+    "clinicId": "clinic-4b",
+    "date": "2025-03-14",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#15"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#30"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#20"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 5985,
+    "insurancePaid": 3411,
+    "patientPaid": 0,
+    "balance": 2574,
+    "status": "Overdue",
+    "dueDate": "2024-10-22",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0118",
+    "patientId": "PAT-0077",
+    "patientName": "Luis Clark",
+    "clinicId": "clinic-1c",
+    "date": "2024-04-21",
+    "procedures": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#8"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 5685,
+    "insurancePaid": 2672,
+    "patientPaid": 0,
+    "balance": 3013,
+    "status": "Overdue",
+    "dueDate": "2024-11-07",
+    "paymentHistory": [],
+    "notes": ""
+  },
+  {
+    "id": "INV-0119",
+    "patientId": "PAT-0041",
+    "patientName": "Karen Jackson",
+    "clinicId": "clinic-4a",
+    "date": "2024-06-06",
+    "procedures": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#15"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 5785,
+    "insurancePaid": 3413,
+    "patientPaid": 2372,
+    "balance": 0,
+    "status": "Paid",
+    "dueDate": "2025-02-16",
+    "paymentHistory": [
+      {
+        "id": "pay-119",
+        "date": "2024-02-19",
+        "amount": 2372,
+        "method": "Check",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "INV-0120",
+    "patientId": "PAT-0076",
+    "patientName": "Priya Miller",
+    "clinicId": "clinic-2e",
+    "date": "2024-04-13",
+    "procedures": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 115,
+    "insurancePaid": 64,
+    "patientPaid": 26,
+    "balance": 25,
+    "status": "Partial",
+    "dueDate": "2024-03-11",
+    "paymentHistory": [
+      {
+        "id": "pay-120",
+        "date": "2025-06-18",
+        "amount": 26,
+        "method": "CareCredit",
+        "notes": ""
+      }
+    ],
+    "notes": ""
+  }
+]

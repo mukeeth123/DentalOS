@@ -1,0 +1,5580 @@
+[
+  {
+    "id": "CLM-0001",
+    "patientId": "PAT-0099",
+    "patientName": "Marcus Jackson",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#24"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 210,
+    "totalAllowed": 160,
+    "totalPaid": 160,
+    "patientResponsibility": 50,
+    "status": "Approved",
+    "submittedDate": "2025-06-06",
+    "processedDate": "2025-07-10",
+    "denialReason": null,
+    "aiScore": 95,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0002",
+    "patientId": "PAT-0094",
+    "patientName": "Luna Ali",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#19"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 615,
+    "totalAllowed": 486,
+    "totalPaid": 0,
+    "patientResponsibility": 615,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 96,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0003",
+    "patientId": "PAT-0087",
+    "patientName": "Malik Martin",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#13"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#15"
+      }
+    ],
+    "totalBilled": 5765,
+    "totalAllowed": 5361,
+    "totalPaid": 0,
+    "patientResponsibility": 5765,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 88,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0004",
+    "patientId": "PAT-0007",
+    "patientName": "Ana Hernandez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#7"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#21"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 2865,
+    "totalAllowed": 2006,
+    "totalPaid": 0,
+    "patientResponsibility": 2865,
+    "status": "Appealed",
+    "submittedDate": "2024-11-21",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 57,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0005",
+    "patientId": "PAT-0084",
+    "patientName": "Charles Allen",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 65,
+    "totalAllowed": 60,
+    "totalPaid": 0,
+    "patientResponsibility": 65,
+    "status": "Appealed",
+    "submittedDate": "2024-10-23",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 72,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0006",
+    "patientId": "PAT-0062",
+    "patientName": "Diego Young",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#10"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 495,
+    "totalAllowed": 376,
+    "totalPaid": 188,
+    "patientResponsibility": 307,
+    "status": "Pending",
+    "submittedDate": "2024-08-15",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 67,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0007",
+    "patientId": "PAT-0049",
+    "patientName": "Diego Thomas",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#25"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#15"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 1815,
+    "totalAllowed": 1525,
+    "totalPaid": 0,
+    "patientResponsibility": 1815,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 56,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0008",
+    "patientId": "PAT-0003",
+    "patientName": "Logan Campbell",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 244,
+    "totalPaid": 122,
+    "patientResponsibility": 143,
+    "status": "Pending",
+    "submittedDate": "2025-07-18",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 77,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0009",
+    "patientId": "PAT-0039",
+    "patientName": "Thomas Green",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#21"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 2965,
+    "totalAllowed": 2520,
+    "totalPaid": 2520,
+    "patientResponsibility": 445,
+    "status": "Approved",
+    "submittedDate": "2025-01-22",
+    "processedDate": "2025-08-22",
+    "denialReason": null,
+    "aiScore": 96,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0010",
+    "patientId": "PAT-0040",
+    "patientName": "Ananya Green",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 148,
+    "totalPaid": 0,
+    "patientResponsibility": 185,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 59,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0011",
+    "patientId": "PAT-0099",
+    "patientName": "Marcus Jackson",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#30"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 7035,
+    "totalAllowed": 5839,
+    "totalPaid": 5839,
+    "patientResponsibility": 1196,
+    "status": "Paid",
+    "submittedDate": "2025-06-14",
+    "processedDate": "2024-10-30",
+    "denialReason": null,
+    "aiScore": 62,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0012",
+    "patientId": "PAT-0047",
+    "patientName": "Miguel Shah",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#27"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 470,
+    "totalAllowed": 357,
+    "totalPaid": 0,
+    "patientResponsibility": 470,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 98,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0013",
+    "patientId": "PAT-0032",
+    "patientName": "Janelle Jones",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#3"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 450,
+    "totalAllowed": 383,
+    "totalPaid": 0,
+    "patientResponsibility": 450,
+    "status": "Appealed",
+    "submittedDate": "2024-12-27",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 82,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0014",
+    "patientId": "PAT-0068",
+    "patientName": "Eleanor Sanchez",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-4a",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 212,
+    "totalPaid": 0,
+    "patientResponsibility": 265,
+    "status": "Appealed",
+    "submittedDate": "2025-10-03",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 75,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0015",
+    "patientId": "PAT-0006",
+    "patientName": "Eleanor Green",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 115,
+    "totalAllowed": 87,
+    "totalPaid": 87,
+    "patientResponsibility": 28,
+    "status": "Approved",
+    "submittedDate": "2024-12-03",
+    "processedDate": "2025-12-11",
+    "denialReason": null,
+    "aiScore": 82,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0016",
+    "patientId": "PAT-0008",
+    "patientName": "Luis Williams",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 220,
+    "totalPaid": 220,
+    "patientResponsibility": 45,
+    "status": "Approved",
+    "submittedDate": "2024-07-08",
+    "processedDate": "2025-12-25",
+    "denialReason": null,
+    "aiScore": 76,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0017",
+    "patientId": "PAT-0091",
+    "patientName": "Juan Lee",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#8"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 960,
+    "totalAllowed": 883,
+    "totalPaid": 0,
+    "patientResponsibility": 960,
+    "status": "Submitted",
+    "submittedDate": "2024-12-19",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 68,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0018",
+    "patientId": "PAT-0057",
+    "patientName": "Penelope Kumar",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#26"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#5"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 5995,
+    "totalAllowed": 4796,
+    "totalPaid": 2398,
+    "patientResponsibility": 3597,
+    "status": "Pending",
+    "submittedDate": "2024-08-31",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 68,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0019",
+    "patientId": "PAT-0014",
+    "patientName": "Ana Adams",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#21"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 11000,
+    "totalAllowed": 9240,
+    "totalPaid": 0,
+    "patientResponsibility": 11000,
+    "status": "Denied",
+    "submittedDate": "2025-04-22",
+    "processedDate": "2025-10-22",
+    "denialReason": "Duplicate claim",
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0020",
+    "patientId": "PAT-0023",
+    "patientName": "Ava Walker",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#31"
+      }
+    ],
+    "totalBilled": 145,
+    "totalAllowed": 104,
+    "totalPaid": 0,
+    "patientResponsibility": 145,
+    "status": "Appealed",
+    "submittedDate": "2025-10-20",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 59,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0021",
+    "patientId": "PAT-0024",
+    "patientName": "Destiny Franklin",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#11"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#31"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 1225,
+    "totalAllowed": 992,
+    "totalPaid": 496,
+    "patientResponsibility": 729,
+    "status": "Pending",
+    "submittedDate": "2025-07-14",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 72,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0022",
+    "patientId": "PAT-0056",
+    "patientName": "Ming Hall",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#18"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 535,
+    "totalAllowed": 476,
+    "totalPaid": 238,
+    "patientResponsibility": 297,
+    "status": "Pending",
+    "submittedDate": "2025-01-25",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0023",
+    "patientId": "PAT-0052",
+    "patientName": "Patricia Ramirez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#6"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 370,
+    "totalAllowed": 340,
+    "totalPaid": 170,
+    "patientResponsibility": 200,
+    "status": "Pending",
+    "submittedDate": "2024-06-25",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 98,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0024",
+    "patientId": "PAT-0075",
+    "patientName": "Elijah Kumar",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#14"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 1465,
+    "totalAllowed": 1362,
+    "totalPaid": 1362,
+    "patientResponsibility": 103,
+    "status": "Approved",
+    "submittedDate": "2024-03-21",
+    "processedDate": "2024-07-18",
+    "denialReason": null,
+    "aiScore": 85,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0025",
+    "patientId": "PAT-0065",
+    "patientName": "Logan Nguyen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 635,
+    "totalAllowed": 578,
+    "totalPaid": 578,
+    "patientResponsibility": 57,
+    "status": "Approved",
+    "submittedDate": "2025-01-29",
+    "processedDate": "2024-01-16",
+    "denialReason": null,
+    "aiScore": 63,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0026",
+    "patientId": "PAT-0089",
+    "patientName": "David Davis",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#3"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 2245,
+    "totalAllowed": 2043,
+    "totalPaid": 1022,
+    "patientResponsibility": 1223,
+    "status": "Pending",
+    "submittedDate": "2024-04-09",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 87,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0027",
+    "patientId": "PAT-0098",
+    "patientName": "Arun Johnson",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#19"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#3"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 6115,
+    "totalAllowed": 4709,
+    "totalPaid": 4709,
+    "patientResponsibility": 1406,
+    "status": "Approved",
+    "submittedDate": "2025-09-24",
+    "processedDate": "2025-08-21",
+    "denialReason": null,
+    "aiScore": 56,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0028",
+    "patientId": "PAT-0051",
+    "patientName": "Amara Anderson",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#3"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 1385,
+    "totalAllowed": 1136,
+    "totalPaid": 1136,
+    "patientResponsibility": 249,
+    "status": "Approved",
+    "submittedDate": "2025-11-10",
+    "processedDate": "2025-01-28",
+    "denialReason": null,
+    "aiScore": 61,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0029",
+    "patientId": "PAT-0024",
+    "patientName": "Destiny Franklin",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 5500,
+    "totalAllowed": 5060,
+    "totalPaid": 0,
+    "patientResponsibility": 5500,
+    "status": "Appealed",
+    "submittedDate": "2024-05-01",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 66,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0030",
+    "patientId": "PAT-0085",
+    "patientName": "Noah Nguyen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#31"
+      }
+    ],
+    "totalBilled": 350,
+    "totalAllowed": 319,
+    "totalPaid": 160,
+    "patientResponsibility": 190,
+    "status": "Pending",
+    "submittedDate": "2025-06-08",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 57,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0031",
+    "patientId": "PAT-0061",
+    "patientName": "Ava Wright",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 115,
+    "totalAllowed": 105,
+    "totalPaid": 0,
+    "patientResponsibility": 115,
+    "status": "Appealed",
+    "submittedDate": "2024-03-09",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 65,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0032",
+    "patientId": "PAT-0091",
+    "patientName": "Juan Lee",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#24"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#29"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 4100,
+    "totalAllowed": 3731,
+    "totalPaid": 3731,
+    "patientResponsibility": 369,
+    "status": "Paid",
+    "submittedDate": "2025-08-18",
+    "processedDate": "2024-07-14",
+    "denialReason": null,
+    "aiScore": 99,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0033",
+    "patientId": "PAT-0100",
+    "patientName": "Robert Kumar",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2b",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#8"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#6"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 2160,
+    "totalAllowed": 1750,
+    "totalPaid": 0,
+    "patientResponsibility": 2160,
+    "status": "Appealed",
+    "submittedDate": "2025-10-28",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 74,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0034",
+    "patientId": "PAT-0050",
+    "patientName": "Darius Baker",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#25"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 1080,
+    "totalAllowed": 961,
+    "totalPaid": 961,
+    "patientResponsibility": 119,
+    "status": "Approved",
+    "submittedDate": "2024-07-01",
+    "processedDate": "2025-02-22",
+    "denialReason": null,
+    "aiScore": 76,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0035",
+    "patientId": "PAT-0014",
+    "patientName": "Ana Adams",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#10"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 1615,
+    "totalAllowed": 1389,
+    "totalPaid": 0,
+    "patientResponsibility": 1615,
+    "status": "Denied",
+    "submittedDate": "2024-05-25",
+    "processedDate": "2024-12-23",
+    "denialReason": "Duplicate claim",
+    "aiScore": 60,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0036",
+    "patientId": "PAT-0075",
+    "patientName": "Elijah Kumar",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#2"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 535,
+    "totalAllowed": 396,
+    "totalPaid": 198,
+    "patientResponsibility": 337,
+    "status": "Pending",
+    "submittedDate": "2025-02-23",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 78,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0037",
+    "patientId": "PAT-0023",
+    "patientName": "Ava Walker",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 370,
+    "totalAllowed": 303,
+    "totalPaid": 0,
+    "patientResponsibility": 370,
+    "status": "Denied",
+    "submittedDate": "2024-11-18",
+    "processedDate": "2024-03-28",
+    "denialReason": "Missing X-ray attachment",
+    "aiScore": 75,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0038",
+    "patientId": "PAT-0076",
+    "patientName": "Priya Miller",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#29"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#9"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 750,
+    "totalAllowed": 563,
+    "totalPaid": 282,
+    "patientResponsibility": 468,
+    "status": "Pending",
+    "submittedDate": "2024-07-27",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 66,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0039",
+    "patientId": "PAT-0098",
+    "patientName": "Arun Johnson",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#22"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#10"
+      },
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 480,
+    "totalAllowed": 365,
+    "totalPaid": 0,
+    "patientResponsibility": 480,
+    "status": "Appealed",
+    "submittedDate": "2024-02-01",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 62,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0040",
+    "patientId": "PAT-0080",
+    "patientName": "William Shah",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#10"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 1160,
+    "totalAllowed": 1102,
+    "totalPaid": 0,
+    "patientResponsibility": 1160,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 76,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0041",
+    "patientId": "PAT-0056",
+    "patientName": "Ming Hall",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#30"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#24"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 650,
+    "totalAllowed": 520,
+    "totalPaid": 0,
+    "patientResponsibility": 650,
+    "status": "Denied",
+    "submittedDate": "2025-09-22",
+    "processedDate": "2025-09-23",
+    "denialReason": "Invalid CDT code",
+    "aiScore": 87,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0042",
+    "patientId": "PAT-0032",
+    "patientName": "Janelle Jones",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 141,
+    "totalPaid": 141,
+    "patientResponsibility": 44,
+    "status": "Approved",
+    "submittedDate": "2024-02-10",
+    "processedDate": "2025-06-26",
+    "denialReason": null,
+    "aiScore": 91,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0043",
+    "patientId": "PAT-0095",
+    "patientName": "Elizabeth Jefferson",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#19"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#5"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 485,
+    "totalAllowed": 456,
+    "totalPaid": 228,
+    "patientResponsibility": 257,
+    "status": "Pending",
+    "submittedDate": "2025-12-03",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 58,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0044",
+    "patientId": "PAT-0008",
+    "patientName": "Luis Williams",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 145,
+    "totalAllowed": 131,
+    "totalPaid": 0,
+    "patientResponsibility": 145,
+    "status": "Appealed",
+    "submittedDate": "2025-05-07",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 57,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0045",
+    "patientId": "PAT-0074",
+    "patientName": "Sofia Young",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 350,
+    "totalAllowed": 277,
+    "totalPaid": 277,
+    "patientResponsibility": 73,
+    "status": "Paid",
+    "submittedDate": "2024-02-26",
+    "processedDate": "2024-05-18",
+    "denialReason": null,
+    "aiScore": 72,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0046",
+    "patientId": "PAT-0082",
+    "patientName": "Tamika Lewis",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#6"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#26"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 2870,
+    "totalAllowed": 2612,
+    "totalPaid": 0,
+    "patientResponsibility": 2870,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 77,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0047",
+    "patientId": "PAT-0085",
+    "patientName": "Noah Nguyen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#19"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 400,
+    "totalAllowed": 312,
+    "totalPaid": 0,
+    "patientResponsibility": 400,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 78,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0048",
+    "patientId": "PAT-0045",
+    "patientName": "Ava Clark",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#31"
+      }
+    ],
+    "totalBilled": 2400,
+    "totalAllowed": 1776,
+    "totalPaid": 0,
+    "patientResponsibility": 2400,
+    "status": "Submitted",
+    "submittedDate": "2024-11-26",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 90,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0049",
+    "patientId": "PAT-0048",
+    "patientName": "Divya Johnson",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-3a",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#3"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 1180,
+    "totalAllowed": 1038,
+    "totalPaid": 0,
+    "patientResponsibility": 1180,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 82,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0050",
+    "patientId": "PAT-0020",
+    "patientName": "Susan Wright",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#20"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 2465,
+    "totalAllowed": 1923,
+    "totalPaid": 1923,
+    "patientResponsibility": 542,
+    "status": "Approved",
+    "submittedDate": "2024-07-11",
+    "processedDate": "2024-02-04",
+    "denialReason": null,
+    "aiScore": 77,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0051",
+    "patientId": "PAT-0015",
+    "patientName": "Elijah Harris",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#2"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#8"
+      }
+    ],
+    "totalBilled": 11000,
+    "totalAllowed": 8140,
+    "totalPaid": 0,
+    "patientResponsibility": 11000,
+    "status": "Denied",
+    "submittedDate": "2025-03-01",
+    "processedDate": "2024-12-08",
+    "denialReason": "Service not covered",
+    "aiScore": 81,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0052",
+    "patientId": "PAT-0096",
+    "patientName": "Malik Robinson",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#3"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 430,
+    "totalAllowed": 353,
+    "totalPaid": 0,
+    "patientResponsibility": 430,
+    "status": "Submitted",
+    "submittedDate": "2025-04-01",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 83,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0053",
+    "patientId": "PAT-0087",
+    "patientName": "Malik Martin",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#30"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#11"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 5950,
+    "totalAllowed": 4165,
+    "totalPaid": 0,
+    "patientResponsibility": 5950,
+    "status": "Submitted",
+    "submittedDate": "2024-11-17",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 60,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0054",
+    "patientId": "PAT-0033",
+    "patientName": "Malik Hall",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#5"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 430,
+    "totalAllowed": 357,
+    "totalPaid": 0,
+    "patientResponsibility": 430,
+    "status": "Appealed",
+    "submittedDate": "2025-03-16",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 60,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0055",
+    "patientId": "PAT-0062",
+    "patientName": "Diego Young",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#9"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#9"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 16500,
+    "totalAllowed": 13860,
+    "totalPaid": 13860,
+    "patientResponsibility": 2640,
+    "status": "Approved",
+    "submittedDate": "2025-09-12",
+    "processedDate": "2024-11-22",
+    "denialReason": null,
+    "aiScore": 95,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0056",
+    "patientId": "PAT-0048",
+    "patientName": "Divya Johnson",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-3a",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#4"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#3"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 595,
+    "totalAllowed": 417,
+    "totalPaid": 0,
+    "patientResponsibility": 595,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 58,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0057",
+    "patientId": "PAT-0036",
+    "patientName": "John Rodriguez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 145,
+    "totalAllowed": 123,
+    "totalPaid": 0,
+    "patientResponsibility": 145,
+    "status": "Appealed",
+    "submittedDate": "2024-03-31",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 67,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0058",
+    "patientId": "PAT-0012",
+    "patientName": "Janelle Torres",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#6"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#28"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 4800,
+    "totalAllowed": 4416,
+    "totalPaid": 2208,
+    "patientResponsibility": 2592,
+    "status": "Pending",
+    "submittedDate": "2024-12-15",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0059",
+    "patientId": "PAT-0036",
+    "patientName": "John Rodriguez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 895,
+    "totalAllowed": 797,
+    "totalPaid": 797,
+    "patientResponsibility": 98,
+    "status": "Paid",
+    "submittedDate": "2025-03-30",
+    "processedDate": "2024-05-10",
+    "denialReason": null,
+    "aiScore": 92,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0060",
+    "patientId": "PAT-0007",
+    "patientName": "Ana Hernandez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#26"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#20"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 715,
+    "totalAllowed": 651,
+    "totalPaid": 0,
+    "patientResponsibility": 715,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 79,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0061",
+    "patientId": "PAT-0019",
+    "patientName": "Karen Jackson",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#24"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 635,
+    "totalAllowed": 495,
+    "totalPaid": 495,
+    "patientResponsibility": 140,
+    "status": "Paid",
+    "submittedDate": "2024-05-29",
+    "processedDate": "2025-04-30",
+    "denialReason": null,
+    "aiScore": 87,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0062",
+    "patientId": "PAT-0066",
+    "patientName": "Thomas Hernandez",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#20"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#6"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 1770,
+    "totalAllowed": 1451,
+    "totalPaid": 0,
+    "patientResponsibility": 1770,
+    "status": "Denied",
+    "submittedDate": "2024-01-14",
+    "processedDate": "2024-09-30",
+    "denialReason": "Missing X-ray attachment",
+    "aiScore": 73,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0063",
+    "patientId": "PAT-0057",
+    "patientName": "Penelope Kumar",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#5"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#9"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 2430,
+    "totalAllowed": 1871,
+    "totalPaid": 0,
+    "patientResponsibility": 2430,
+    "status": "Submitted",
+    "submittedDate": "2025-12-12",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 79,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0064",
+    "patientId": "PAT-0007",
+    "patientName": "Ana Hernandez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#6"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#30"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 4645,
+    "totalAllowed": 3437,
+    "totalPaid": 0,
+    "patientResponsibility": 4645,
+    "status": "Appealed",
+    "submittedDate": "2024-01-26",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 91,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0065",
+    "patientId": "PAT-0063",
+    "patientName": "Fatima Lopez",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2b",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 231,
+    "totalPaid": 0,
+    "patientResponsibility": 265,
+    "status": "Appealed",
+    "submittedDate": "2024-06-23",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 92,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0066",
+    "patientId": "PAT-0018",
+    "patientName": "Mia Allen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#4"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#13"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#14"
+      }
+    ],
+    "totalBilled": 4100,
+    "totalAllowed": 2952,
+    "totalPaid": 0,
+    "patientResponsibility": 4100,
+    "status": "Submitted",
+    "submittedDate": "2025-02-20",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 96,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0067",
+    "patientId": "PAT-0077",
+    "patientName": "Luis Clark",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 146,
+    "totalPaid": 0,
+    "patientResponsibility": 185,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 57,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0068",
+    "patientId": "PAT-0054",
+    "patientName": "Tyrone Perez",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4a",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#3"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 585,
+    "totalAllowed": 515,
+    "totalPaid": 0,
+    "patientResponsibility": 585,
+    "status": "Denied",
+    "submittedDate": "2024-09-20",
+    "processedDate": "2025-10-16",
+    "denialReason": "Pre-authorization required",
+    "aiScore": 69,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0069",
+    "patientId": "PAT-0008",
+    "patientName": "Luis Williams",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#2"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#12"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#3"
+      }
+    ],
+    "totalBilled": 2685,
+    "totalAllowed": 1906,
+    "totalPaid": 0,
+    "patientResponsibility": 2685,
+    "status": "Denied",
+    "submittedDate": "2025-03-27",
+    "processedDate": "2024-04-23",
+    "denialReason": "Duplicate claim",
+    "aiScore": 69,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0070",
+    "patientId": "PAT-0057",
+    "patientName": "Penelope Kumar",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#4"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#15"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#15"
+      }
+    ],
+    "totalBilled": 3445,
+    "totalAllowed": 2687,
+    "totalPaid": 0,
+    "patientResponsibility": 3445,
+    "status": "Appealed",
+    "submittedDate": "2024-10-09",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 55,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0071",
+    "patientId": "PAT-0044",
+    "patientName": "Jennifer Kumar",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 2400,
+    "totalAllowed": 1728,
+    "totalPaid": 0,
+    "patientResponsibility": 2400,
+    "status": "Denied",
+    "submittedDate": "2024-03-06",
+    "processedDate": "2024-03-17",
+    "denialReason": "Pre-authorization required",
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0072",
+    "patientId": "PAT-0014",
+    "patientName": "Ana Adams",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#30"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#20"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 2690,
+    "totalAllowed": 2529,
+    "totalPaid": 0,
+    "patientResponsibility": 2690,
+    "status": "Appealed",
+    "submittedDate": "2024-11-24",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 83,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0073",
+    "patientId": "PAT-0009",
+    "patientName": "Sarah Hall",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-2b",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#3"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#21"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 8250,
+    "totalAllowed": 7013,
+    "totalPaid": 7013,
+    "patientResponsibility": 1237,
+    "status": "Paid",
+    "submittedDate": "2025-01-19",
+    "processedDate": "2024-03-27",
+    "denialReason": null,
+    "aiScore": 65,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0074",
+    "patientId": "PAT-0009",
+    "patientName": "Sarah Hall",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-2b",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 115,
+    "totalAllowed": 87,
+    "totalPaid": 0,
+    "patientResponsibility": 115,
+    "status": "Submitted",
+    "submittedDate": "2024-11-20",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 90,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0075",
+    "patientId": "PAT-0029",
+    "patientName": "Tamika Sanchez",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 201,
+    "totalPaid": 101,
+    "patientResponsibility": 164,
+    "status": "Pending",
+    "submittedDate": "2024-06-15",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 87,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0076",
+    "patientId": "PAT-0063",
+    "patientName": "Fatima Lopez",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2b",
+    "procedureCodes": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#27"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#8"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#31"
+      }
+    ],
+    "totalBilled": 1965,
+    "totalAllowed": 1592,
+    "totalPaid": 0,
+    "patientResponsibility": 1965,
+    "status": "Denied",
+    "submittedDate": "2025-04-05",
+    "processedDate": "2024-03-03",
+    "denialReason": "Invalid CDT code",
+    "aiScore": 96,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0077",
+    "patientId": "PAT-0087",
+    "patientName": "Malik Martin",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#19"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 535,
+    "totalAllowed": 428,
+    "totalPaid": 0,
+    "patientResponsibility": 535,
+    "status": "Appealed",
+    "submittedDate": "2025-07-06",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 91,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0078",
+    "patientId": "PAT-0026",
+    "patientName": "Fatima Jackson",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 1200,
+    "totalAllowed": 1020,
+    "totalPaid": 0,
+    "patientResponsibility": 1200,
+    "status": "Appealed",
+    "submittedDate": "2025-07-19",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 76,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0079",
+    "patientId": "PAT-0069",
+    "patientName": "Latoya Garcia",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#9"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 1465,
+    "totalAllowed": 1333,
+    "totalPaid": 0,
+    "patientResponsibility": 1465,
+    "status": "Denied",
+    "submittedDate": "2024-12-23",
+    "processedDate": "2025-01-09",
+    "denialReason": "Benefit maximum reached",
+    "aiScore": 89,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0080",
+    "patientId": "PAT-0023",
+    "patientName": "Ava Walker",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#5"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 330,
+    "totalAllowed": 254,
+    "totalPaid": 0,
+    "patientResponsibility": 330,
+    "status": "Appealed",
+    "submittedDate": "2024-03-12",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 83,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0081",
+    "patientId": "PAT-0043",
+    "patientName": "Diego Wilson",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#13"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 400,
+    "totalAllowed": 348,
+    "totalPaid": 348,
+    "patientResponsibility": 52,
+    "status": "Approved",
+    "submittedDate": "2024-08-11",
+    "processedDate": "2025-05-15",
+    "denialReason": null,
+    "aiScore": 61,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0082",
+    "patientId": "PAT-0075",
+    "patientName": "Elijah Kumar",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#8"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 250,
+    "totalAllowed": 185,
+    "totalPaid": 185,
+    "patientResponsibility": 65,
+    "status": "Paid",
+    "submittedDate": "2024-12-02",
+    "processedDate": "2025-01-14",
+    "denialReason": null,
+    "aiScore": 64,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0083",
+    "patientId": "PAT-0095",
+    "patientName": "Elizabeth Jefferson",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 155,
+    "totalPaid": 0,
+    "patientResponsibility": 185,
+    "status": "Submitted",
+    "submittedDate": "2025-09-14",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 78,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0084",
+    "patientId": "PAT-0030",
+    "patientName": "Juan Perez",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-3a",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 144,
+    "totalPaid": 72,
+    "patientResponsibility": 113,
+    "status": "Pending",
+    "submittedDate": "2024-05-17",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 94,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0085",
+    "patientId": "PAT-0038",
+    "patientName": "Isabella Ali",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#27"
+      }
+    ],
+    "totalBilled": 895,
+    "totalAllowed": 752,
+    "totalPaid": 0,
+    "patientResponsibility": 895,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 55,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0086",
+    "patientId": "PAT-0030",
+    "patientName": "Juan Perez",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-3a",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#3"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#20"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 535,
+    "totalAllowed": 476,
+    "totalPaid": 0,
+    "patientResponsibility": 535,
+    "status": "Submitted",
+    "submittedDate": "2025-08-06",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 82,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0087",
+    "patientId": "PAT-0064",
+    "patientName": "Riley Park",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#25"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 3600,
+    "totalAllowed": 3168,
+    "totalPaid": 0,
+    "patientResponsibility": 3600,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 93,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0088",
+    "patientId": "PAT-0001",
+    "patientName": "Kenji Rivera",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#9"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 585,
+    "totalAllowed": 556,
+    "totalPaid": 0,
+    "patientResponsibility": 585,
+    "status": "Appealed",
+    "submittedDate": "2024-03-25",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 89,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0089",
+    "patientId": "PAT-0042",
+    "patientName": "Mia Thomas",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#14"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 410,
+    "totalAllowed": 340,
+    "totalPaid": 0,
+    "patientResponsibility": 410,
+    "status": "Appealed",
+    "submittedDate": "2025-08-06",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 74,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0090",
+    "patientId": "PAT-0096",
+    "patientName": "Malik Robinson",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#14"
+      }
+    ],
+    "totalBilled": 65,
+    "totalAllowed": 60,
+    "totalPaid": 0,
+    "patientResponsibility": 65,
+    "status": "Appealed",
+    "submittedDate": "2024-10-30",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 72,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0091",
+    "patientId": "PAT-0033",
+    "patientName": "Malik Hall",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#21"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 820,
+    "totalAllowed": 754,
+    "totalPaid": 754,
+    "patientResponsibility": 66,
+    "status": "Paid",
+    "submittedDate": "2025-04-28",
+    "processedDate": "2024-04-05",
+    "denialReason": null,
+    "aiScore": 78,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0092",
+    "patientId": "PAT-0080",
+    "patientName": "William Shah",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 139,
+    "totalPaid": 0,
+    "patientResponsibility": 185,
+    "status": "Denied",
+    "submittedDate": "2024-04-06",
+    "processedDate": "2025-09-29",
+    "denialReason": "Missing X-ray attachment",
+    "aiScore": 90,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0093",
+    "patientId": "PAT-0025",
+    "patientName": "Luna Carter",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#6"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#18"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 4495,
+    "totalAllowed": 3956,
+    "totalPaid": 0,
+    "patientResponsibility": 4495,
+    "status": "Appealed",
+    "submittedDate": "2025-01-19",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 94,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0094",
+    "patientId": "PAT-0028",
+    "patientName": "Andre Jefferson",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#20"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#25"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#25"
+      }
+    ],
+    "totalBilled": 1885,
+    "totalAllowed": 1433,
+    "totalPaid": 1433,
+    "patientResponsibility": 452,
+    "status": "Approved",
+    "submittedDate": "2024-06-01",
+    "processedDate": "2025-06-02",
+    "denialReason": null,
+    "aiScore": 64,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0095",
+    "patientId": "PAT-0063",
+    "patientName": "Fatima Lopez",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2b",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 231,
+    "totalPaid": 0,
+    "patientResponsibility": 265,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 69,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0096",
+    "patientId": "PAT-0018",
+    "patientName": "Mia Allen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#5"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 415,
+    "totalAllowed": 291,
+    "totalPaid": 0,
+    "patientResponsibility": 415,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 77,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0097",
+    "patientId": "PAT-0007",
+    "patientName": "Ana Hernandez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 241,
+    "totalPaid": 0,
+    "patientResponsibility": 265,
+    "status": "Appealed",
+    "submittedDate": "2025-10-12",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 76,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0098",
+    "patientId": "PAT-0092",
+    "patientName": "Vikram Mitchell",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#4"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#29"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 1305,
+    "totalAllowed": 927,
+    "totalPaid": 0,
+    "patientResponsibility": 1305,
+    "status": "Denied",
+    "submittedDate": "2024-06-24",
+    "processedDate": "2024-09-10",
+    "denialReason": "Pre-authorization required",
+    "aiScore": 72,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0099",
+    "patientId": "PAT-0089",
+    "patientName": "David Davis",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 285,
+    "totalAllowed": 248,
+    "totalPaid": 248,
+    "patientResponsibility": 37,
+    "status": "Paid",
+    "submittedDate": "2025-02-26",
+    "processedDate": "2024-12-05",
+    "denialReason": null,
+    "aiScore": 87,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0100",
+    "patientId": "PAT-0037",
+    "patientName": "Janelle Gupta",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#28"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#19"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 2935,
+    "totalAllowed": 2436,
+    "totalPaid": 0,
+    "patientResponsibility": 2935,
+    "status": "Appealed",
+    "submittedDate": "2025-11-16",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 92,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0101",
+    "patientId": "PAT-0049",
+    "patientName": "Diego Thomas",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 1200,
+    "totalAllowed": 1092,
+    "totalPaid": 1092,
+    "patientResponsibility": 108,
+    "status": "Paid",
+    "submittedDate": "2025-12-12",
+    "processedDate": "2025-05-27",
+    "denialReason": null,
+    "aiScore": 88,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0102",
+    "patientId": "PAT-0090",
+    "patientName": "Mia Lee",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 145,
+    "totalAllowed": 138,
+    "totalPaid": 138,
+    "patientResponsibility": 7,
+    "status": "Paid",
+    "submittedDate": "2025-04-13",
+    "processedDate": "2025-01-10",
+    "denialReason": null,
+    "aiScore": 85,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0103",
+    "patientId": "PAT-0029",
+    "patientName": "Tamika Sanchez",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#18"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 1615,
+    "totalAllowed": 1292,
+    "totalPaid": 0,
+    "patientResponsibility": 1615,
+    "status": "Submitted",
+    "submittedDate": "2024-09-13",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 78,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0104",
+    "patientId": "PAT-0080",
+    "patientName": "William Shah",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#28"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#20"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 735,
+    "totalAllowed": 632,
+    "totalPaid": 0,
+    "patientResponsibility": 735,
+    "status": "Submitted",
+    "submittedDate": "2025-10-17",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 94,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0105",
+    "patientId": "PAT-0077",
+    "patientName": "Luis Clark",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#14"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 146,
+    "totalPaid": 146,
+    "patientResponsibility": 39,
+    "status": "Approved",
+    "submittedDate": "2024-08-26",
+    "processedDate": "2024-11-14",
+    "denialReason": null,
+    "aiScore": 96,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0106",
+    "patientId": "PAT-0074",
+    "patientName": "Sofia Young",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 285,
+    "totalAllowed": 251,
+    "totalPaid": 251,
+    "patientResponsibility": 34,
+    "status": "Paid",
+    "submittedDate": "2024-03-18",
+    "processedDate": "2024-05-27",
+    "denialReason": null,
+    "aiScore": 91,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0107",
+    "patientId": "PAT-0067",
+    "patientName": "Diego King",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-3a",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 115,
+    "totalAllowed": 109,
+    "totalPaid": 0,
+    "patientResponsibility": 115,
+    "status": "Submitted",
+    "submittedDate": "2024-06-26",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0108",
+    "patientId": "PAT-0029",
+    "patientName": "Tamika Sanchez",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#11"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 1080,
+    "totalAllowed": 1026,
+    "totalPaid": 1026,
+    "patientResponsibility": 54,
+    "status": "Paid",
+    "submittedDate": "2025-04-22",
+    "processedDate": "2025-01-05",
+    "denialReason": null,
+    "aiScore": 88,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0109",
+    "patientId": "PAT-0090",
+    "patientName": "Mia Lee",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#8"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 5800,
+    "totalAllowed": 4350,
+    "totalPaid": 2175,
+    "patientResponsibility": 3625,
+    "status": "Pending",
+    "submittedDate": "2024-05-31",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 85,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0110",
+    "patientId": "PAT-0087",
+    "patientName": "Malik Martin",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 165,
+    "totalPaid": 0,
+    "patientResponsibility": 185,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 59,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0111",
+    "patientId": "PAT-0097",
+    "patientName": "Aaliyah Lewis",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#20"
+      },
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 430,
+    "totalAllowed": 340,
+    "totalPaid": 0,
+    "patientResponsibility": 430,
+    "status": "Denied",
+    "submittedDate": "2025-02-09",
+    "processedDate": "2024-12-03",
+    "denialReason": "Duplicate claim",
+    "aiScore": 62,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0112",
+    "patientId": "PAT-0032",
+    "patientName": "Janelle Jones",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 350,
+    "totalAllowed": 329,
+    "totalPaid": 0,
+    "patientResponsibility": 350,
+    "status": "Appealed",
+    "submittedDate": "2024-08-08",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 56,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0113",
+    "patientId": "PAT-0020",
+    "patientName": "Susan Wright",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#30"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#7"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 1900,
+    "totalAllowed": 1387,
+    "totalPaid": 0,
+    "patientResponsibility": 1900,
+    "status": "Appealed",
+    "submittedDate": "2025-08-22",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 80,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0114",
+    "patientId": "PAT-0047",
+    "patientName": "Miguel Shah",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D0210",
+        "description": "Full Mouth X-rays",
+        "fee": 145,
+        "tooth": "#26"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#7"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 11145,
+    "totalAllowed": 8136,
+    "totalPaid": 0,
+    "patientResponsibility": 11145,
+    "status": "Denied",
+    "submittedDate": "2025-06-13",
+    "processedDate": "2025-01-07",
+    "denialReason": "Pre-authorization required",
+    "aiScore": 81,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0115",
+    "patientId": "PAT-0081",
+    "patientName": "James Hassan",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#18"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#2"
+      }
+    ],
+    "totalBilled": 1385,
+    "totalAllowed": 1233,
+    "totalPaid": 0,
+    "patientResponsibility": 1385,
+    "status": "Denied",
+    "submittedDate": "2025-11-09",
+    "processedDate": "2024-11-18",
+    "denialReason": "Pre-authorization required",
+    "aiScore": 84,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0116",
+    "patientId": "PAT-0007",
+    "patientName": "Ana Hernandez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#3"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#9"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 615,
+    "totalAllowed": 498,
+    "totalPaid": 498,
+    "patientResponsibility": 117,
+    "status": "Paid",
+    "submittedDate": "2025-10-14",
+    "processedDate": "2024-04-15",
+    "denialReason": null,
+    "aiScore": 67,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0117",
+    "patientId": "PAT-0097",
+    "patientName": "Aaliyah Lewis",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#21"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#11"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 1275,
+    "totalAllowed": 1097,
+    "totalPaid": 1097,
+    "patientResponsibility": 178,
+    "status": "Approved",
+    "submittedDate": "2025-09-06",
+    "processedDate": "2024-12-19",
+    "denialReason": null,
+    "aiScore": 77,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0118",
+    "patientId": "PAT-0041",
+    "patientName": "Karen Jackson",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4a",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 142,
+    "totalPaid": 142,
+    "patientResponsibility": 43,
+    "status": "Paid",
+    "submittedDate": "2025-03-16",
+    "processedDate": "2024-06-10",
+    "denialReason": null,
+    "aiScore": 66,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0119",
+    "patientId": "PAT-0015",
+    "patientName": "Elijah Harris",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1b",
+    "procedureCodes": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 1350,
+    "totalAllowed": 1148,
+    "totalPaid": 0,
+    "patientResponsibility": 1350,
+    "status": "Submitted",
+    "submittedDate": "2024-04-20",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 84,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0120",
+    "patientId": "PAT-0012",
+    "patientName": "Janelle Torres",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 155,
+    "totalPaid": 155,
+    "patientResponsibility": 30,
+    "status": "Paid",
+    "submittedDate": "2025-10-28",
+    "processedDate": "2024-04-15",
+    "denialReason": null,
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0121",
+    "patientId": "PAT-0016",
+    "patientName": "Lily Allen",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-4a",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#2"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#6"
+      }
+    ],
+    "totalBilled": 1635,
+    "totalAllowed": 1422,
+    "totalPaid": 1422,
+    "patientResponsibility": 213,
+    "status": "Approved",
+    "submittedDate": "2024-06-23",
+    "processedDate": "2025-07-17",
+    "denialReason": null,
+    "aiScore": 84,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0122",
+    "patientId": "PAT-0062",
+    "patientName": "Diego Young",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#10"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 1820,
+    "totalAllowed": 1729,
+    "totalPaid": 0,
+    "patientResponsibility": 1820,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 81,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0123",
+    "patientId": "PAT-0092",
+    "patientName": "Vikram Mitchell",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#9"
+      }
+    ],
+    "totalBilled": 65,
+    "totalAllowed": 60,
+    "totalPaid": 60,
+    "patientResponsibility": 5,
+    "status": "Approved",
+    "submittedDate": "2024-01-22",
+    "processedDate": "2024-05-16",
+    "denialReason": null,
+    "aiScore": 59,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0124",
+    "patientId": "PAT-0019",
+    "patientName": "Karen Jackson",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#10"
+      },
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#29"
+      }
+    ],
+    "totalBilled": 450,
+    "totalAllowed": 329,
+    "totalPaid": 329,
+    "patientResponsibility": 121,
+    "status": "Paid",
+    "submittedDate": "2025-01-25",
+    "processedDate": "2024-04-18",
+    "denialReason": null,
+    "aiScore": 59,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0125",
+    "patientId": "PAT-0071",
+    "patientName": "Miguel Robinson",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#15"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#27"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#20"
+      }
+    ],
+    "totalBilled": 4985,
+    "totalAllowed": 3938,
+    "totalPaid": 1969,
+    "patientResponsibility": 3016,
+    "status": "Pending",
+    "submittedDate": "2025-07-30",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 79,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0126",
+    "patientId": "PAT-0083",
+    "patientName": "Fatima Nelson",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#4"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 1160,
+    "totalAllowed": 812,
+    "totalPaid": 0,
+    "patientResponsibility": 1160,
+    "status": "Denied",
+    "submittedDate": "2024-03-26",
+    "processedDate": "2025-10-27",
+    "denialReason": "Service not covered",
+    "aiScore": 97,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0127",
+    "patientId": "PAT-0073",
+    "patientName": "Charlotte Garcia",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#7"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#14"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#11"
+      }
+    ],
+    "totalBilled": 2985,
+    "totalAllowed": 2239,
+    "totalPaid": 1120,
+    "patientResponsibility": 1865,
+    "status": "Pending",
+    "submittedDate": "2024-05-05",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 89,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0128",
+    "patientId": "PAT-0078",
+    "patientName": "Hana Park",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#5"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#6"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#18"
+      }
+    ],
+    "totalBilled": 585,
+    "totalAllowed": 433,
+    "totalPaid": 0,
+    "patientResponsibility": 585,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 77,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0129",
+    "patientId": "PAT-0071",
+    "patientName": "Miguel Robinson",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#24"
+      }
+    ],
+    "totalBilled": 285,
+    "totalAllowed": 205,
+    "totalPaid": 103,
+    "patientResponsibility": 182,
+    "status": "Pending",
+    "submittedDate": "2025-10-17",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 63,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0130",
+    "patientId": "PAT-0078",
+    "patientName": "Hana Park",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#29"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#28"
+      },
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 535,
+    "totalAllowed": 465,
+    "totalPaid": 0,
+    "patientResponsibility": 535,
+    "status": "Denied",
+    "submittedDate": "2025-10-22",
+    "processedDate": "2025-06-23",
+    "denialReason": "Invalid CDT code",
+    "aiScore": 88,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0131",
+    "patientId": "PAT-0085",
+    "patientName": "Noah Nguyen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-4c",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#30"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#12"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 495,
+    "totalAllowed": 386,
+    "totalPaid": 0,
+    "patientResponsibility": 495,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 84,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0132",
+    "patientId": "PAT-0044",
+    "patientName": "Jennifer Kumar",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#3"
+      },
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#13"
+      }
+    ],
+    "totalBilled": 5615,
+    "totalAllowed": 5110,
+    "totalPaid": 0,
+    "patientResponsibility": 5615,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 87,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0133",
+    "patientId": "PAT-0001",
+    "patientName": "Kenji Rivera",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#20"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#10"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 11285,
+    "totalAllowed": 8238,
+    "totalPaid": 4119,
+    "patientResponsibility": 7166,
+    "status": "Pending",
+    "submittedDate": "2024-02-16",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 70,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0134",
+    "patientId": "PAT-0094",
+    "patientName": "Luna Ali",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#14"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#22"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 1650,
+    "totalAllowed": 1436,
+    "totalPaid": 0,
+    "patientResponsibility": 1650,
+    "status": "Denied",
+    "submittedDate": "2024-05-05",
+    "processedDate": "2024-06-16",
+    "denialReason": "Pre-authorization required",
+    "aiScore": 88,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0135",
+    "patientId": "PAT-0064",
+    "patientName": "Riley Park",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#15"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 163,
+    "totalPaid": 163,
+    "patientResponsibility": 22,
+    "status": "Approved",
+    "submittedDate": "2024-12-22",
+    "processedDate": "2024-11-06",
+    "denialReason": null,
+    "aiScore": 55,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0136",
+    "patientId": "PAT-0070",
+    "patientName": "Hana Anderson",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 265,
+    "totalAllowed": 220,
+    "totalPaid": 220,
+    "patientResponsibility": 45,
+    "status": "Paid",
+    "submittedDate": "2024-07-01",
+    "processedDate": "2024-04-27",
+    "denialReason": null,
+    "aiScore": 70,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Appeal in progress"
+  },
+  {
+    "id": "CLM-0137",
+    "patientId": "PAT-0052",
+    "patientName": "Patricia Ramirez",
+    "insurerId": "ins-delta-dental",
+    "insurerName": "Delta Dental",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#5"
+      }
+    ],
+    "totalBilled": 115,
+    "totalAllowed": 94,
+    "totalPaid": 94,
+    "patientResponsibility": 21,
+    "status": "Approved",
+    "submittedDate": "2025-09-23",
+    "processedDate": "2025-06-08",
+    "denialReason": null,
+    "aiScore": 99,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0138",
+    "patientId": "PAT-0089",
+    "patientName": "David Davis",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2a",
+    "procedureCodes": [
+      {
+        "code": "D1110",
+        "description": "Adult Prophylaxis",
+        "fee": 115,
+        "tooth": "#20"
+      },
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#21"
+      }
+    ],
+    "totalBilled": 2360,
+    "totalAllowed": 1935,
+    "totalPaid": 0,
+    "patientResponsibility": 2360,
+    "status": "Submitted",
+    "submittedDate": "2024-12-23",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 76,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0139",
+    "patientId": "PAT-0012",
+    "patientName": "Janelle Torres",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-1a",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#22"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 150,
+    "totalPaid": 75,
+    "patientResponsibility": 110,
+    "status": "Pending",
+    "submittedDate": "2024-12-03",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 73,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0140",
+    "patientId": "PAT-0029",
+    "patientName": "Tamika Sanchez",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D0330",
+        "description": "Panoramic X-ray",
+        "fee": 185,
+        "tooth": "#23"
+      }
+    ],
+    "totalBilled": 185,
+    "totalAllowed": 150,
+    "totalPaid": 150,
+    "patientResponsibility": 35,
+    "status": "Approved",
+    "submittedDate": "2025-02-12",
+    "processedDate": "2024-05-16",
+    "denialReason": null,
+    "aiScore": 59,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Resubmitted with corrections"
+  },
+  {
+    "id": "CLM-0141",
+    "patientId": "PAT-0065",
+    "patientName": "Logan Nguyen",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-2e",
+    "procedureCodes": [
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#11"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#12"
+      },
+      {
+        "code": "D2740",
+        "description": "Crown - Porcelain",
+        "fee": 1350,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 1800,
+    "totalAllowed": 1530,
+    "totalPaid": 1530,
+    "patientResponsibility": 270,
+    "status": "Approved",
+    "submittedDate": "2025-06-11",
+    "processedDate": "2025-10-24",
+    "denialReason": null,
+    "aiScore": 65,
+    "aiFlags": [
+      "Incomplete documentation"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0142",
+    "patientId": "PAT-0041",
+    "patientName": "Karen Jackson",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4a",
+    "procedureCodes": [
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#20"
+      },
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#14"
+      },
+      {
+        "code": "D7140",
+        "description": "Simple Extraction",
+        "fee": 185,
+        "tooth": "#4"
+      }
+    ],
+    "totalBilled": 2770,
+    "totalAllowed": 2188,
+    "totalPaid": 1094,
+    "patientResponsibility": 1676,
+    "status": "Pending",
+    "submittedDate": "2025-02-01",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 68,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0143",
+    "patientId": "PAT-0075",
+    "patientName": "Elijah Kumar",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-4b",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#3"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 1180,
+    "totalAllowed": 1062,
+    "totalPaid": 1062,
+    "patientResponsibility": 118,
+    "status": "Paid",
+    "submittedDate": "2025-10-20",
+    "processedDate": "2024-02-25",
+    "denialReason": null,
+    "aiScore": 57,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0144",
+    "patientId": "PAT-0025",
+    "patientName": "Luna Carter",
+    "insurerId": "ins-metlife",
+    "insurerName": "MetLife",
+    "clinicId": "clinic-1c",
+    "procedureCodes": [
+      {
+        "code": "D3310",
+        "description": "Root Canal - Anterior",
+        "fee": 895,
+        "tooth": "#30"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#30"
+      }
+    ],
+    "totalBilled": 6395,
+    "totalAllowed": 5883,
+    "totalPaid": 2942,
+    "patientResponsibility": 3453,
+    "status": "Pending",
+    "submittedDate": "2025-04-24",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 95,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0145",
+    "patientId": "PAT-0068",
+    "patientName": "Eleanor Sanchez",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-4a",
+    "procedureCodes": [
+      {
+        "code": "D2140",
+        "description": "Amalgam Restoration",
+        "fee": 185,
+        "tooth": "#23"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#10"
+      }
+    ],
+    "totalBilled": 1385,
+    "totalAllowed": 1150,
+    "totalPaid": 0,
+    "patientResponsibility": 1385,
+    "status": "Denied",
+    "submittedDate": "2025-06-12",
+    "processedDate": "2025-08-08",
+    "denialReason": "Duplicate claim",
+    "aiScore": 66,
+    "aiFlags": [
+      "Missing X-ray"
+    ],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0146",
+    "patientId": "PAT-0017",
+    "patientName": "Jennifer Thomas",
+    "insurerId": "ins-aetna",
+    "insurerName": "Aetna",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#7"
+      }
+    ],
+    "totalBilled": 1200,
+    "totalAllowed": 984,
+    "totalPaid": 0,
+    "patientResponsibility": 1200,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 89,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0147",
+    "patientId": "PAT-0094",
+    "patientName": "Luna Ali",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2c",
+    "procedureCodes": [
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#12"
+      }
+    ],
+    "totalBilled": 1200,
+    "totalAllowed": 864,
+    "totalPaid": 0,
+    "patientResponsibility": 1200,
+    "status": "Draft",
+    "submittedDate": null,
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 64,
+    "aiFlags": [
+      "Pre-auth required"
+    ],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0148",
+    "patientId": "PAT-0064",
+    "patientName": "Riley Park",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-3b",
+    "procedureCodes": [
+      {
+        "code": "D6010",
+        "description": "Implant Placement",
+        "fee": 2400,
+        "tooth": "#14"
+      },
+      {
+        "code": "D3330",
+        "description": "Root Canal - Molar",
+        "fee": 1200,
+        "tooth": "#15"
+      },
+      {
+        "code": "D4341",
+        "description": "Periodontal Scaling",
+        "fee": 265,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 3865,
+    "totalAllowed": 3015,
+    "totalPaid": 3015,
+    "patientResponsibility": 850,
+    "status": "Approved",
+    "submittedDate": "2024-07-28",
+    "processedDate": "2025-01-27",
+    "denialReason": null,
+    "aiScore": 95,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": "Standard submission"
+  },
+  {
+    "id": "CLM-0149",
+    "patientId": "PAT-0062",
+    "patientName": "Diego Young",
+    "insurerId": "ins-united-concordia",
+    "insurerName": "United Concordia",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D0120",
+        "description": "Periodic Oral Evaluation",
+        "fee": 65,
+        "tooth": "#28"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#30"
+      },
+      {
+        "code": "D7210",
+        "description": "Surgical Extraction",
+        "fee": 350,
+        "tooth": "#26"
+      }
+    ],
+    "totalBilled": 765,
+    "totalAllowed": 650,
+    "totalPaid": 0,
+    "patientResponsibility": 765,
+    "status": "Appealed",
+    "submittedDate": "2025-03-02",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 82,
+    "aiFlags": [],
+    "attachments": [
+      "consent-form.pdf"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "CLM-0150",
+    "patientId": "PAT-0037",
+    "patientName": "Janelle Gupta",
+    "insurerId": "ins-cigna",
+    "insurerName": "Cigna",
+    "clinicId": "clinic-2d",
+    "procedureCodes": [
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#30"
+      },
+      {
+        "code": "D8080",
+        "description": "Comprehensive Orthodontic Treatment",
+        "fee": 5500,
+        "tooth": "#19"
+      },
+      {
+        "code": "D2392",
+        "description": "Composite Resin (3 surfaces)",
+        "fee": 285,
+        "tooth": "#19"
+      }
+    ],
+    "totalBilled": 6070,
+    "totalAllowed": 5584,
+    "totalPaid": 0,
+    "patientResponsibility": 6070,
+    "status": "Submitted",
+    "submittedDate": "2025-11-30",
+    "processedDate": null,
+    "denialReason": null,
+    "aiScore": 95,
+    "aiFlags": [],
+    "attachments": [
+      "xray-periapical.jpg"
+    ],
+    "notes": "Resubmitted with corrections"
+  }
+]
