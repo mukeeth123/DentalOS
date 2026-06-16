@@ -1,0 +1,52 @@
+[
+  { "id": "img-1", "patientId": "PAT-0001", "type": "Bitewing", "date": "2026-05-04", "aiStatus": "Finding", "findings": [
+    { "type": "Caries", "tooth": "#14", "confidence": 87, "color": "bg-red-500" },
+    { "type": "Bone Loss", "tooth": "#13", "confidence": 72, "color": "bg-orange-500" }
+  ] },
+  { "id": "img-2", "patientId": "PAT-0002", "type": "Periapical", "date": "2026-04-27", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-3", "patientId": "PAT-0003", "type": "Panoramic", "date": "2026-04-20", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-4", "patientId": "PAT-0004", "type": "CBCT", "date": "2026-04-13", "aiStatus": "Reviewed", "findings": [
+    { "type": "Restoration", "tooth": "#30", "confidence": 95, "color": "bg-blue-500" }
+  ] },
+  { "id": "img-5", "patientId": "PAT-0005", "type": "Bitewing", "date": "2026-04-06", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-6", "patientId": "PAT-0006", "type": "Periapical", "date": "2026-03-30", "aiStatus": "Finding", "findings": [
+    { "type": "Caries", "tooth": "#19", "confidence": 81, "color": "bg-red-500" }
+  ] },
+  { "id": "img-7", "patientId": "PAT-0001", "type": "Panoramic", "date": "2026-03-23", "aiStatus": "Reviewed", "findings": [
+    { "type": "Restoration", "tooth": "#3", "confidence": 92, "color": "bg-blue-500" }
+  ] },
+  { "id": "img-8", "patientId": "PAT-0008", "type": "CBCT", "date": "2026-03-16", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-9", "patientId": "PAT-0009", "type": "Bitewing", "date": "2026-03-09", "aiStatus": "Reviewed", "findings": [
+    { "type": "Restoration", "tooth": "#8", "confidence": 90, "color": "bg-blue-500" }
+  ] },
+  { "id": "img-10", "patientId": "PAT-0010", "type": "Periapical", "date": "2026-03-02", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-11", "patientId": "PAT-0011", "type": "Panoramic", "date": "2026-02-23", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-12", "patientId": "PAT-0001", "type": "CBCT", "date": "2026-02-16", "aiStatus": "Finding", "findings": [
+    { "type": "Impaction", "tooth": "#17", "confidence": 88, "color": "bg-red-500" }
+  ] },
+  { "id": "img-13", "patientId": "PAT-0013", "type": "Bitewing", "date": "2026-02-09", "aiStatus": "Reviewed", "findings": [
+    { "type": "Restoration", "tooth": "#30", "confidence": 95, "color": "bg-blue-500" }
+  ] },
+  { "id": "img-14", "patientId": "PAT-0014", "type": "Periapical", "date": "2026-02-02", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-15", "patientId": "PAT-0015", "type": "Panoramic", "date": "2026-01-26", "aiStatus": "Finding", "findings": [
+    { "type": "Caries", "tooth": "#3", "confidence": 79, "color": "bg-red-500" },
+    { "type": "Bone Loss", "tooth": "#19", "confidence": 65, "color": "bg-orange-500" }
+  ] },
+  { "id": "img-16", "patientId": "PAT-0016", "type": "CBCT", "date": "2026-01-19", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-17", "patientId": "PAT-0017", "type": "Bitewing", "date": "2026-01-12", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-18", "patientId": "PAT-0001", "type": "Periapical", "date": "2026-01-05", "aiStatus": "Reviewed", "findings": [
+    { "type": "Restoration", "tooth": "#14", "confidence": 93, "color": "bg-blue-500" }
+  ] },
+  { "id": "img-19", "patientId": "PAT-0019", "type": "Panoramic", "date": "2025-12-29", "aiStatus": "Finding", "findings": [
+    { "type": "Caries", "tooth": "#8", "confidence": 84, "color": "bg-red-500" }
+  ] },
+  { "id": "img-20", "patientId": "PAT-0020", "type": "CBCT", "date": "2025-12-22", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-21", "patientId": "PAT-0021", "type": "Bitewing", "date": "2025-12-15", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-22", "patientId": "PAT-0022", "type": "Periapical", "date": "2025-12-08", "aiStatus": "Finding", "findings": [
+    { "type": "Bone Loss", "tooth": "#30", "confidence": 70, "color": "bg-orange-500" }
+  ] },
+  { "id": "img-23", "patientId": "PAT-0023", "type": "Panoramic", "date": "2025-12-01", "aiStatus": "Normal", "findings": [] },
+  { "id": "img-24", "patientId": "PAT-0024", "type": "CBCT", "date": "2025-11-24", "aiStatus": "Reviewed", "findings": [
+    { "type": "Restoration", "tooth": "#19", "confidence": 91, "color": "bg-blue-500" }
+  ] }
+]

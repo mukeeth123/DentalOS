@@ -343,6 +343,25 @@ export interface LeaveRecord {
   approvedBy?: string;
 }
 
+export type ImagingType = "Bitewing" | "Periapical" | "Panoramic" | "CBCT";
+export type ImagingAIStatus = "Normal" | "Finding" | "Reviewed";
+
+export interface ImagingFinding {
+  type: string;
+  tooth: string;
+  confidence: number;
+  color: string;
+}
+
+export interface ImagingRecord {
+  id: string;
+  patientId: string;
+  type: ImagingType;
+  date: string;
+  aiStatus: ImagingAIStatus;
+  findings: ImagingFinding[];
+}
+
 export interface Doctor {
   id: string;
   firstName: string;

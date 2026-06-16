@@ -2,7 +2,8 @@
 
 import { use, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Calendar, MessageSquare, FileText, StickyNote, Download, Mail, Phone, MapPin, Shield, CheckCircle, Clock, Circle, Plus } from "lucide-react";
+import { ArrowLeft, Calendar, MessageSquare, FileText, StickyNote, Download, Mail, Phone, MapPin, Shield, CheckCircle, Clock, Circle, Plus, Scan } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
@@ -10,14 +11,17 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sh
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { StatusBadge } from "@/components/shared/StatusBadge";
+import { ImagingViewerModal } from "@/components/shared/ImagingViewerModal";
 import { usePatientsStore } from "@/stores/patientsStore";
 import { useClaimsStore } from "@/stores/claimsStore";
 import { useBillingStore } from "@/stores/billingStore";
+import { useImagingStore } from "@/stores/imagingStore";
 import { formatCurrency, formatDate } from "@/lib/utils";
 import { PdfReport } from "@/lib/pdf";
 import { toast } from "sonner";
+import type { ImagingRecord } from "@/types";
 
-type Tab = "overview" | "journey" | "clinical" | "insurance" | "claims" | "billing" | "communications" | "documents";
+type Tab = "overview" | "journey" | "clinical" | "insurance" | "claims" | "billing" | "communications" | "imaging" | "documents";
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "overview", label: "Overview" },
@@ -27,8 +31,15 @@ const TABS: { id: Tab; label: string }[] = [
   { id: "claims", label: "Claims" },
   { id: "billing", label: "Billing" },
   { id: "communications", label: "Communications" },
+  { id: "imaging", label: "Imaging" },
   { id: "documents", label: "Documents" },
 ];
+
+const AI_STATUS_COLORS: Record<string, string> = {
+  Finding: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+  Reviewed: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+  Normal: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
+};
 
 function BookModal({ patient, open, onClose }: { patient: any; open: boolean; onClose: () => void }) {
   const router = useRouter();
@@ -188,12 +199,14 @@ export default function PatientDetailPage({ params }: { params: Promise<{ id: st
   const { patients } = usePatientsStore();
   const { claims } = useClaimsStore();
   const { invoices } = useBillingStore();
+  const { images } = useImagingStore();
   const [activeTab, setActiveTab] = useState<Tab>("overview");
   const [bookOpen, setBookOpen] = useState(false);
   const [msgOpen, setMsgOpen] = useState(false);
   const [noteOpen, setNoteOpen] = useState(false);
   const [claimOpen, setClaimOpen] = useState(false);
   const [quickMsg, setQuickMsg] = useState("");
+  const [selectedImage, setSelectedImage] = useState<ImagingRecord | null>(null);
 
   const patient = patients.find((p) => p.id === id);
   if (!patient) return (
@@ -205,6 +218,7 @@ export default function PatientDetailPage({ params }: { params: Promise<{ id: st
 
   const patientClaims = claims.filter((c) => c.patientId === id);
   const patientInvoices = invoices.filter((inv) => inv.patientId === id);
+  const patientImages = images.filter((img) => img.patientId === id).sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
   const generateReport = () => {
     const report = new PdfReport(
@@ -319,6 +333,7 @@ export default function PatientDetailPage({ params }: { params: Promise<{ id: st
               {tab.label}
               {tab.id === "claims" && patientClaims.length > 0 && <span className="ml-1 text-xs bg-muted rounded-full px-1.5">{patientClaims.length}</span>}
               {tab.id === "billing" && patientInvoices.length > 0 && <span className="ml-1 text-xs bg-muted rounded-full px-1.5">{patientInvoices.length}</span>}
+              {tab.id === "imaging" && patientImages.length > 0 && <span className="ml-1 text-xs bg-muted rounded-full px-1.5">{patientImages.length}</span>}
             </button>
           ))}
         </div>
@@ -609,6 +624,50 @@ export default function PatientDetailPage({ params }: { params: Promise<{ id: st
         </div>
       )}
 
+      {/* Tab: Imaging */}
+      {activeTab === "imaging" && (
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-sm flex items-center justify-between">
+              <span className="flex items-center gap-2"><Scan className="size-4" /> X-Rays &amp; Imaging</span>
+              <Button size="sm" variant="outline" onClick={() => router.push("/imaging")}>Open Imaging Gallery</Button>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {patientImages.length > 0 ? (
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {patientImages.map((img) => (
+                  <div
+                    key={img.id}
+                    className="group relative rounded-xl overflow-hidden cursor-pointer ring-1 ring-foreground/10 hover:ring-primary/50 transition-all"
+                    onClick={() => setSelectedImage(img)}
+                  >
+                    <div className="aspect-square bg-gray-900 dark:bg-gray-800 flex flex-col items-center justify-center gap-2 p-3">
+                      <span className="text-gray-400 text-2xl">🦷</span>
+                      <p className="text-gray-300 text-xs font-mono">X-Ray</p>
+                      <p className="text-gray-500 text-[10px]">{img.type}</p>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/70 to-transparent">
+                      <p className="text-gray-300 text-[10px]">{formatDate(img.date)}</p>
+                    </div>
+                    <div className="absolute top-2 right-2">
+                      <span className={`text-[10px] font-medium rounded-full px-1.5 py-0.5 ${AI_STATUS_COLORS[img.aiStatus]}`}>
+                        {img.aiStatus}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-8">
+                <Scan className="size-8 text-muted-foreground mx-auto mb-2" />
+                <p className="text-muted-foreground">No X-rays or scans on file for this patient yet.</p>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      )}
+
       {/* Tab: Documents */}
       {activeTab === "documents" && (
         <Card>
@@ -653,6 +712,15 @@ export default function PatientDetailPage({ params }: { params: Promise<{ id: st
       <MessageSheet patient={patient} open={msgOpen} onClose={() => setMsgOpen(false)} />
       <NoteSheet patient={patient} open={noteOpen} onClose={() => setNoteOpen(false)} />
       <ClaimSheet patient={patient} open={claimOpen} onClose={() => setClaimOpen(false)} />
+      <AnimatePresence>
+        {selectedImage && (
+          <ImagingViewerModal
+            image={selectedImage}
+            patientName={`${patient.firstName} ${patient.lastName}`}
+            onClose={() => setSelectedImage(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
