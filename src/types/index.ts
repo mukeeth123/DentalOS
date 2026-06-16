@@ -327,3 +327,48 @@ export interface Workflow {
   actionsCount: number;
   description: string;
 }
+
+export type DoctorStatus = "Available" | "Busy" | "On Leave" | "In Surgery" | "Off Duty";
+export type LeaveType = "Vacation" | "Sick Leave" | "Training" | "Conference";
+export type LeaveStatus = "Approved" | "Pending" | "Denied";
+
+export interface LeaveRecord {
+  id: string;
+  type: LeaveType;
+  startDate: string;
+  endDate: string;
+  status: LeaveStatus;
+  reason: string;
+  requestedDate: string;
+  approvedBy?: string;
+}
+
+export interface Doctor {
+  id: string;
+  firstName: string;
+  lastName: string;
+  photo: string;
+  email: string;
+  phone: string;
+  specialties: string[];
+  clinicIds: string[];
+  clinicNames: string[];
+  npiNumber: string;
+  licenseNumber: string;
+  yearsExperience: number;
+  status: DoctorStatus;
+  schedule: WeeklySchedule;
+  assignedChairs: string[];
+  leaveRecords: LeaveRecord[];
+  utilizationRate: number;
+  revenueGenerated: number;
+  revenueGoal: number;
+  patientsSeenToday: number;
+  patientsSeenMonth: number;
+  noShowRate: number;
+  avgRating: number;
+  appointmentsToday: number;
+  slotsAvailableToday: number;
+  nextAvailableSlot: string;
+  bio: string;
+}

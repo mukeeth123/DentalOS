@@ -6,7 +6,7 @@ import {
   LayoutDashboard, Users, Calendar, ClipboardList, Scan,
   Shield, FileText, CreditCard, MessageSquare, Bot,
   GitBranch, BarChart3, Brain, Plug, UserCog, Settings,
-  ChevronLeft, ChevronRight, Lock,
+  ChevronLeft, ChevronRight, Lock, Stethoscope,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useUIStore } from "@/stores/uiStore";
@@ -19,6 +19,7 @@ const NAV_ITEMS = [
   { label: "Dashboard",      icon: LayoutDashboard, href: "/dashboard",      perm: "Patients" },
   { label: "Patients",       icon: Users,           href: "/patients",       perm: "Patients" },
   { label: "Appointments",   icon: Calendar,        href: "/appointments",   perm: "Appointments" },
+  { label: "Doctor Availability", icon: Stethoscope, href: "/doctor-availability", perm: "Doctor Availability" },
   { label: "Clinical",       icon: ClipboardList,   href: "/clinical",       perm: "Clinical" },
   { label: "Imaging",        icon: Scan,            href: "/imaging",        perm: "Clinical" },
   { label: "Insurance",      icon: Shield,          href: "/insurance",      perm: "Claims" },

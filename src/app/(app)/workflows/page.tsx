@@ -13,10 +13,33 @@ import { formatDateTime } from "@/lib/utils";
 import { toast } from "sonner";
 import type { Workflow } from "@/types";
 
+const TRIGGER_OPTIONS = ["Patient Recall Due", "Appointment Booked", "Appointment Completed", "Claim Denied", "Invoice Overdue", "New Patient Added", "Treatment Plan Created", "Doctor On Leave", "Schedule Full", "Open Slot Available", "Manual Trigger"];
+
 export default function WorkflowsPage() {
   const [workflows, setWorkflows] = useState<Workflow[]>(workflowsData as Workflow[]);
   const [createOpen, setCreateOpen] = useState(false);
   const [newWf, setNewWf] = useState({ name: "", trigger: "Patient Recall Due", description: "" });
+  const [editWf, setEditWf] = useState<Workflow | null>(null);
+  const [editForm, setEditForm] = useState({ name: "", trigger: "Patient Recall Due", description: "", stepsCount: 1 });
+
+  const openEdit = (wf: Workflow) => {
+    setEditWf(wf);
+    setEditForm({ name: wf.name, trigger: wf.trigger, description: wf.description, stepsCount: wf.stepsCount });
+  };
+
+  const saveEdit = () => {
+    if (!editWf) return;
+    if (!editForm.name) { toast.error("Workflow name required"); return; }
+    setWorkflows((prev) =>
+      prev.map((w) =>
+        w.id === editWf.id
+          ? { ...w, name: editForm.name, trigger: editForm.trigger, description: editForm.description, stepsCount: editForm.stepsCount }
+          : w
+      )
+    );
+    toast.success(`Workflow "${editForm.name}" updated`);
+    setEditWf(null);
+  };
 
   const toggleStatus = (id: string) => {
     setWorkflows((prev) =>
@@ -98,7 +121,7 @@ export default function WorkflowsPage() {
                     {wf.status === "Active" ? <><Pause className="size-3" /> Pause</> : <><Play className="size-3" /> Activate</>}
                   </Button>
                   <div className="flex gap-1">
-                    <Button size="icon-xs" variant="outline" onClick={() => toast.info(`Edit workflow: ${wf.name}`)}><Edit2 className="size-3" /></Button>
+                    <Button size="icon-xs" variant="outline" onClick={() => openEdit(wf)}><Edit2 className="size-3" /></Button>
                     <Button size="icon-xs" variant="outline" onClick={() => { setWorkflows((p) => [...p, { ...wf, id: `${wf.id}-copy`, name: `${wf.name} (Copy)`, status: "Draft" }]); toast.success("Workflow duplicated"); }}><Copy className="size-3" /></Button>
                     <Button size="icon-xs" variant="outline" className="text-destructive hover:text-destructive" onClick={() => { setWorkflows((p) => p.filter((w) => w.id !== wf.id)); toast.success("Workflow deleted"); }}><Trash2 className="size-3" /></Button>
                   </div>
@@ -118,7 +141,7 @@ export default function WorkflowsPage() {
           <div><Label>Workflow Name</Label><Input value={newWf.name} onChange={(e) => setNewWf((p) => ({ ...p, name: e.target.value }))} placeholder="e.g. Appointment Reminder Sequence" className="mt-1" /></div>
           <div><Label>Trigger</Label>
             <select value={newWf.trigger} onChange={(e) => setNewWf((p) => ({ ...p, trigger: e.target.value }))} className="w-full h-9 rounded-md border border-input bg-background px-3 text-sm mt-1">
-              {["Patient Recall Due", "Appointment Booked", "Appointment Completed", "Claim Denied", "Invoice Overdue", "New Patient Added", "Treatment Plan Created", "Manual Trigger"].map((t) => <option key={t}>{t}</option>)}
+              {TRIGGER_OPTIONS.map((t) => <option key={t}>{t}</option>)}
             </select>
           </div>
           <div><Label>Description</Label><textarea value={newWf.description} onChange={(e) => setNewWf((p) => ({ ...p, description: e.target.value }))} rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm resize-none mt-1" placeholder="What does this workflow do?" /></div>
@@ -133,6 +156,27 @@ export default function WorkflowsPage() {
             setCreateOpen(false);
             setNewWf({ name: "", trigger: "Patient Recall Due", description: "" });
           }}>Create Workflow</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+
+    {/* Edit Workflow Dialog */}
+    <Dialog open={!!editWf} onOpenChange={(o) => !o && setEditWf(null)}>
+      <DialogContent className="max-w-md">
+        <DialogHeader><DialogTitle>Edit Workflow: {editWf?.name}</DialogTitle></DialogHeader>
+        <div className="space-y-3 py-2">
+          <div><Label>Workflow Name</Label><Input value={editForm.name} onChange={(e) => setEditForm((p) => ({ ...p, name: e.target.value }))} className="mt-1" /></div>
+          <div><Label>Trigger</Label>
+            <select value={editForm.trigger} onChange={(e) => setEditForm((p) => ({ ...p, trigger: e.target.value }))} className="w-full h-9 rounded-md border border-input bg-background px-3 text-sm mt-1">
+              {TRIGGER_OPTIONS.map((t) => <option key={t}>{t}</option>)}
+            </select>
+          </div>
+          <div><Label>Steps</Label><Input type="number" min={1} value={editForm.stepsCount} onChange={(e) => setEditForm((p) => ({ ...p, stepsCount: Math.max(1, parseInt(e.target.value) || 1) }))} className="mt-1" /></div>
+          <div><Label>Description</Label><textarea value={editForm.description} onChange={(e) => setEditForm((p) => ({ ...p, description: e.target.value }))} rows={3} className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm resize-none mt-1" /></div>
+        </div>
+        <DialogFooter>
+          <Button variant="outline" onClick={() => setEditWf(null)}>Cancel</Button>
+          <Button onClick={saveEdit}>Save Changes</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

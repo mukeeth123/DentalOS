@@ -16,6 +16,7 @@ import { Slider } from "@/components/ui/slider";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { useAgentStore } from "@/stores/agentStore";
 import { formatDate } from "@/lib/utils";
+import { PdfReport } from "@/lib/pdf";
 
 /* ─── Mock Call Recordings ─────────────────────────────────────────────────── */
 const CALL_RECORDINGS = [
@@ -464,11 +465,48 @@ function CallPlayer({ call, onClose }: { call: typeof CALL_RECORDINGS[0]; onClos
         {/* Footer */}
         <div className="px-5 py-3 border-t border-border flex justify-between items-center bg-muted/20">
           <Button variant="outline" size="sm" onClick={() => {
-            const text = call.transcript.map((l) => `${l.speaker}: ${l.text}`).join("\n\n");
-            const blob = new Blob([`CALL RECORDING — ${call.callerName}\n${call.date} ${call.time} · ${call.duration}\nOutcome: ${call.outcome}\n\nSUMMARY:\n${call.summary}\n\nTRANSCRIPT:\n${text}`], { type: "text/plain" });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement("a"); a.href = url; a.download = `call-${call.id}.txt`; a.click();
-            URL.revokeObjectURL(url);
+            const report = new PdfReport(
+              `Call Recording — ${call.callerName}`,
+              `${formatDate(call.date)} · ${call.time} · Duration ${call.duration}`
+            );
+
+            report.sectionTitle("Call Summary");
+            report.keyValueRows([
+              ["Caller", call.callerName],
+              ["Phone", call.callerPhone],
+              ["Direction", call.direction],
+              ["Date", formatDate(call.date)],
+              ["Time", call.time],
+              ["Duration", call.duration],
+              ["Outcome", call.outcome],
+            ]);
+            report.paragraph(call.summary);
+
+            if (call.patientCreated) {
+              report.sectionTitle("Patient Created");
+              report.keyValueRows([
+                ["Name", call.patientCreated.name],
+                ["Patient ID", call.patientCreated.id],
+                ["Date of Birth", call.patientCreated.dob],
+                ["Insurance", call.patientCreated.insurance],
+                ["Member ID", call.patientCreated.memberId],
+              ]);
+            }
+
+            if (call.appointmentBooked) {
+              report.sectionTitle("Appointment Booked");
+              report.keyValueRows([
+                ["Date", call.appointmentBooked.date],
+                ["Time", call.appointmentBooked.time],
+                ["Type", call.appointmentBooked.type],
+                ["Provider", call.appointmentBooked.provider],
+              ]);
+            }
+
+            report.sectionTitle("Call Transcript");
+            report.bulletList(call.transcript.map((l) => `${l.speaker === "AI" ? "Nova (AI)" : "Patient"}: ${l.text}`));
+
+            report.save(`call-${call.id}.pdf`);
           }}>
             <Download className="size-3.5" /> Download Transcript
           </Button>

@@ -8,6 +8,9 @@ import {
 } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { StatusBadge } from "@/components/shared/StatusBadge";
+import { useDoctorsStore } from "@/stores/doctorsStore";
+import { formatCurrency } from "@/lib/utils";
 
 const DATE_RANGES = ["7d", "30d", "90d", "12m"] as const;
 type DateRange = typeof DATE_RANGES[number];
@@ -139,6 +142,7 @@ function rangeSummary(range: DateRange, data: { revenue: number }[]) {
 
 export default function AnalyticsPage() {
   const [dateRange, setDateRange] = useState<DateRange>("30d");
+  const { doctors } = useDoctorsStore();
 
   const revenueData = useMemo(() => getRevenueData(dateRange), [dateRange]);
   const claimsData = useMemo(() => getClaimsData(dateRange), [dateRange]);
@@ -197,6 +201,7 @@ export default function AnalyticsPage() {
           <TabsTrigger value="patients">Patients</TabsTrigger>
           <TabsTrigger value="ai">AI Performance</TabsTrigger>
           <TabsTrigger value="treatment">Treatment</TabsTrigger>
+          <TabsTrigger value="doctors">Doctors</TabsTrigger>
         </TabsList>
 
         {/* Revenue Tab */}
@@ -400,6 +405,67 @@ export default function AnalyticsPage() {
               <div><p className="text-3xl font-bold text-orange-600">$42,600</p><p className="text-sm text-muted-foreground">Unaccepted Treatment Value</p></div>
             </div>
           </CardContent></Card>
+        </TabsContent>
+
+        {/* Doctors Tab */}
+        <TabsContent value="doctors" className="space-y-6 mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader><CardTitle>Revenue by Doctor</CardTitle></CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={280}>
+                  <BarChart data={doctors.map((d) => ({ name: `Dr. ${d.lastName}`, revenue: d.revenueGenerated }))} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" horizontal={false} />
+                    <XAxis type="number" tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 11 }} />
+                    <YAxis type="category" dataKey="name" tick={{ fontSize: 10 }} width={90} />
+                    <Tooltip formatter={(v: unknown) => [`$${Number(v).toLocaleString()}`, "Revenue"]} />
+                    <Bar dataKey="revenue" fill="#4F46E5" radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>Utilization by Doctor</CardTitle></CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={280}>
+                  <BarChart data={doctors.map((d) => ({ name: `Dr. ${d.lastName}`, utilization: d.utilizationRate }))} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" horizontal={false} />
+                    <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `${v}%`} tick={{ fontSize: 11 }} />
+                    <YAxis type="category" dataKey="name" tick={{ fontSize: 10 }} width={90} />
+                    <Tooltip formatter={(v: unknown) => [`${v}%`, "Utilization"]} />
+                    <Bar dataKey="utilization" fill="#10B981" radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
+          </div>
+          <Card>
+            <CardHeader><CardTitle>Doctor Performance Summary</CardTitle></CardHeader>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead><tr className="border-b border-border text-xs text-muted-foreground">
+                  <th className="text-left px-4 py-3 font-medium">Doctor</th>
+                  <th className="text-left px-4 py-3 font-medium">Status</th>
+                  <th className="text-right px-4 py-3 font-medium">Patients (Month)</th>
+                  <th className="text-right px-4 py-3 font-medium">Revenue</th>
+                  <th className="text-right px-4 py-3 font-medium">Utilization</th>
+                  <th className="text-right px-4 py-3 font-medium">No-Show Rate</th>
+                </tr></thead>
+                <tbody>
+                  {doctors.map((d) => (
+                    <tr key={d.id} className="border-b border-border/50">
+                      <td className="px-4 py-2.5 font-medium">Dr. {d.firstName} {d.lastName}</td>
+                      <td className="px-4 py-2.5"><StatusBadge status={d.status} size="sm" /></td>
+                      <td className="px-4 py-2.5 text-right">{d.patientsSeenMonth}</td>
+                      <td className="px-4 py-2.5 text-right">{formatCurrency(d.revenueGenerated)}</td>
+                      <td className="px-4 py-2.5 text-right">{d.utilizationRate}%</td>
+                      <td className="px-4 py-2.5 text-right">{d.noShowRate}%</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Card>
         </TabsContent>
       </Tabs>
     </div>

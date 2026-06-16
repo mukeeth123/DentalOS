@@ -10,7 +10,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { KPICard } from "@/components/shared/KPICard";
 import { AgentActivityFeed } from "@/components/shared/AgentActivityFeed";
-import { AlertTriangle, Clock, Users, CheckCircle } from "lucide-react";
+import { StatusBadge } from "@/components/shared/StatusBadge";
+import { useDoctorsStore } from "@/stores/doctorsStore";
+import { AlertTriangle, Clock, Users, CheckCircle, Stethoscope } from "lucide-react";
+
+const STATUS_DOT: Record<string, string> = {
+  Available: "bg-green-500", Busy: "bg-yellow-500", "On Leave": "bg-amber-500",
+  "In Surgery": "bg-purple-500", "Off Duty": "bg-gray-400",
+};
 
 const REVENUE_DATA = [
   { month: "Jan", revenue: 98000, projected: null },
@@ -66,6 +73,9 @@ const CLAIMS_PIPELINE = [
 
 export default function DashboardPage() {
   const router = useRouter();
+  const { doctors } = useDoctorsStore();
+  const availableDoctors = doctors.filter((d) => d.status === "Available").length;
+  const onLeaveDoctors = doctors.filter((d) => d.status === "On Leave").length;
 
   const ALERTS = [
     {
@@ -250,6 +260,37 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* Doctor Availability Widget */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center justify-between">
+            <span className="flex items-center gap-2"><Stethoscope className="size-4" /> Doctor Availability Today</span>
+            <Button variant="ghost" size="sm" className="text-xs h-7" onClick={() => router.push("/doctor-availability")}>View All</Button>
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex items-center gap-4 mb-3 text-xs text-muted-foreground">
+            <span className="flex items-center gap-1"><span className="size-2 rounded-full bg-green-500" /> {availableDoctors} available</span>
+            <span className="flex items-center gap-1"><span className="size-2 rounded-full bg-amber-500" /> {onLeaveDoctors} on leave</span>
+            <span>{doctors.length} total doctors</span>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
+            {doctors.slice(0, 10).map((d) => (
+              <div key={d.id} className="flex items-center gap-2 rounded-lg border border-border p-2">
+                <div className="relative shrink-0">
+                  <img src={d.photo} alt={d.firstName} className="size-8 rounded-full bg-muted" />
+                  <span className={`absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full border-2 border-card ${STATUS_DOT[d.status]}`} />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-medium truncate">Dr. {d.lastName}</p>
+                  <div className="-mt-0.5"><StatusBadge status={d.status} size="sm" /></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }

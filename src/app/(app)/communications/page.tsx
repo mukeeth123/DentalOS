@@ -399,11 +399,8 @@ export default function CommunicationsPage() {
   const [selectedPatient, setSelectedPatient] = useState(patients[0]);
   const [newMessage, setNewMessage] = useState("");
   const [channelFilter, setChannelFilter] = useState("All");
-  const [threadMessages, setThreadMessages] = useState([
-    { id: "1", direction: "outbound", channel: "SMS", text: "Hi! This is a reminder that you have an appointment tomorrow at 10 AM with Dr. Martinez.", time: "Yesterday 2:00 PM" },
-    { id: "2", direction: "inbound", channel: "SMS", text: "Thanks! I'll be there.", time: "Yesterday 2:15 PM" },
-    { id: "3", direction: "outbound", channel: "SMS", text: "Great! Please arrive 10 minutes early to complete your forms. See you soon!", time: "Yesterday 2:16 PM" },
-  ]);
+  const [activeThreadChannel, setActiveThreadChannel] = useState<"SMS" | "Email" | "Voice">("SMS");
+  const [sentMessages, setSentMessages] = useState<{ id: string; patientId: string; channel: "SMS" | "Email" | "Voice"; direction: "outbound"; text: string; time: string }[]>([]);
   const [viewCampaign, setViewCampaign] = useState<typeof INIT_CAMPAIGNS[0] | null>(null);
   const [newCampaignOpen, setNewCampaignOpen] = useState(false);
   const [reviewRequestOpen, setReviewRequestOpen] = useState(false);
@@ -414,11 +411,31 @@ export default function CommunicationsPage() {
 
   const filteredComms = channelFilter === "All" ? allComms : allComms.filter((c) => c.channel === channelFilter);
 
+  const threadMessages = selectedPatient
+    ? [
+        ...selectedPatient.communications
+          .filter((c) => c.channel === activeThreadChannel)
+          .map((c) => ({
+            id: c.id,
+            direction: c.direction === "inbound" ? "inbound" as const : "outbound" as const,
+            text: c.fullContent ?? c.preview,
+            time: new Date(c.timestamp).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }),
+            sortKey: new Date(c.timestamp).getTime(),
+          })),
+        ...sentMessages
+          .filter((m) => m.patientId === selectedPatient.id && m.channel === activeThreadChannel)
+          .map((m) => ({ id: m.id, direction: m.direction, text: m.text, time: m.time, sortKey: Number(m.id) })),
+      ].sort((a, b) => a.sortKey - b.sortKey)
+    : [];
+
   const sendMessage = () => {
-    if (!newMessage.trim()) return;
-    setThreadMessages((prev) => [...prev, { id: Date.now().toString(), direction: "outbound", channel: "SMS", text: newMessage, time: "Just now" }]);
+    if (!newMessage.trim() || !selectedPatient) return;
+    setSentMessages((prev) => [
+      ...prev,
+      { id: Date.now().toString(), patientId: selectedPatient.id, channel: activeThreadChannel, direction: "outbound", text: newMessage, time: "Just now" },
+    ]);
     setNewMessage("");
-    toast.success("Message sent");
+    toast.success(`${activeThreadChannel} sent`);
   };
 
   const avgRating = reviews.filter((r) => r.rating).reduce((s, r) => s + (r.rating ?? 0), 0) / reviews.filter((r) => r.rating).length;
@@ -476,7 +493,7 @@ export default function CommunicationsPage() {
               <div className="flex-1 overflow-y-auto scrollbar-thin divide-y divide-border">
                 {filteredComms.slice(0, 30).map((c) => (
                   <button key={c.id + c.patientId} className={`w-full text-left px-3 py-2.5 hover:bg-muted/50 transition-colors ${selectedPatient?.id === c.patientId ? "bg-muted/40" : ""}`}
-                    onClick={() => { const p = patients.find((pt) => pt.id === c.patientId); if (p) setSelectedPatient(p); }}>
+                    onClick={() => { const p = patients.find((pt) => pt.id === c.patientId); if (p) { setSelectedPatient(p); setActiveThreadChannel(c.channel as "SMS" | "Email" | "Voice"); } }}>
                     <div className="flex items-center justify-between">
                       <p className="text-sm font-medium">{c.patientName}</p>
                       <div className="flex items-center gap-1 text-muted-foreground text-xs">
@@ -500,18 +517,25 @@ export default function CommunicationsPage() {
                       <p className="text-xs text-muted-foreground">{selectedPatient.phone} · {selectedPatient.email}</p>
                     </div>
                     <div className="flex gap-1">
-                      {["SMS", "Email", "Voice"].map((ch) => (
-                        <button key={ch} className="text-xs px-2 py-1 rounded-md border border-border hover:bg-muted flex items-center gap-1">
+                      {(["SMS", "Email", "Voice"] as const).map((ch) => (
+                        <button key={ch} onClick={() => setActiveThreadChannel(ch)}
+                          className={`text-xs px-2 py-1 rounded-md border flex items-center gap-1 transition-colors ${activeThreadChannel === ch ? "border-primary bg-primary/10 text-primary font-medium" : "border-border hover:bg-muted"}`}>
                           {CHANNEL_ICON[ch]}{ch}
                         </button>
                       ))}
                     </div>
                   </div>
                   <div className="flex-1 overflow-y-auto p-4 space-y-3 scrollbar-thin">
+                    {threadMessages.length === 0 && (
+                      <div className="h-full flex items-center justify-center text-sm text-muted-foreground">
+                        No {activeThreadChannel} history with {selectedPatient.firstName} yet.
+                      </div>
+                    )}
                     {threadMessages.map((msg) => (
                       <div key={msg.id} className={`flex ${msg.direction === "outbound" ? "justify-end" : "justify-start"}`}>
                         <div className={`max-w-xs rounded-xl px-3 py-2 text-sm ${msg.direction === "outbound" ? "bg-primary text-primary-foreground" : "bg-muted"}`}>
-                          <p>{msg.text}</p>
+                          {activeThreadChannel === "Voice" && <p className="text-[10px] font-semibold uppercase opacity-70 mb-0.5">📞 Call</p>}
+                          <p className="whitespace-pre-line">{msg.text}</p>
                           <p className={`text-[10px] mt-1 ${msg.direction === "outbound" ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{msg.time}</p>
                         </div>
                       </div>
@@ -524,7 +548,7 @@ export default function CommunicationsPage() {
                       ))}
                     </div>
                     <div className="flex gap-2">
-                      <Input value={newMessage} onChange={(e) => setNewMessage(e.target.value)} onKeyDown={(e) => e.key === "Enter" && sendMessage()} placeholder="Type a message..." className="flex-1" />
+                      <Input value={newMessage} onChange={(e) => setNewMessage(e.target.value)} onKeyDown={(e) => e.key === "Enter" && sendMessage()} placeholder={`Type ${activeThreadChannel === "Email" ? "an email" : activeThreadChannel === "Voice" ? "a call note" : "a message"}...`} className="flex-1" />
                       <Button size="icon" onClick={sendMessage}><Send className="size-4" /></Button>
                     </div>
                   </div>

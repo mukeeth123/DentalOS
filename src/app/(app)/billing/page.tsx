@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Download } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sh
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { useBillingStore } from "@/stores/billingStore";
 import { formatCurrency, formatDate } from "@/lib/utils";
+import { PdfReport } from "@/lib/pdf";
 import { toast } from "sonner";
 import type { Invoice } from "@/types";
 import { useCanEdit } from "@/hooks/usePermission";
@@ -58,6 +59,50 @@ export default function BillingPage() {
     });
     setSelectedInv(null);
     setPayForm({ amount: "", method: "Credit Card", date: new Date().toISOString().slice(0, 10), notes: "" });
+  };
+
+  const exportInvoicePdf = (inv: Invoice) => {
+    const report = new PdfReport(
+      `Invoice ${inv.id} — ${inv.patientName}`,
+      `Invoice Date ${formatDate(inv.date)} · Due ${formatDate(inv.dueDate)}`
+    );
+
+    report.sectionTitle("Invoice Summary");
+    report.keyValueRows([
+      ["Invoice ID", inv.id],
+      ["Patient", inv.patientName],
+      ["Invoice Date", formatDate(inv.date)],
+      ["Due Date", formatDate(inv.dueDate)],
+      ["Status", inv.status],
+      ["Total Billed", formatCurrency(inv.totalBilled)],
+      ["Insurance Paid", formatCurrency(inv.insurancePaid)],
+      ["Patient Paid", formatCurrency(inv.patientPaid)],
+      ["Balance Due", formatCurrency(inv.balance)],
+    ]);
+
+    report.sectionTitle("Procedures");
+    if (inv.procedures.length > 0) {
+      report.table(
+        ["Code", "Description", "Tooth", "Fee"],
+        inv.procedures.map((p) => [p.code, p.description, p.tooth ?? "—", formatCurrency(p.fee)]),
+        [60, 280, 60, 100]
+      );
+    } else {
+      report.paragraph("No procedures listed on this invoice.");
+    }
+
+    report.sectionTitle("Payment History");
+    if (inv.paymentHistory.length > 0) {
+      report.table(
+        ["Date", "Method", "Amount", "Notes"],
+        inv.paymentHistory.map((ph) => [formatDate(ph.date), ph.method, formatCurrency(ph.amount), ph.notes || "—"])
+      );
+    } else {
+      report.paragraph("No payments recorded yet.");
+    }
+
+    report.save(`invoice-${inv.id}.pdf`);
+    toast.success(`Invoice ${inv.id} exported to PDF`);
   };
 
   return (
@@ -158,9 +203,14 @@ export default function BillingPage() {
                   </td>
                   <td className="px-4 py-3"><StatusBadge status={inv.status} /></td>
                   <td className="px-4 py-3 text-right">
-                    <Button size="xs" variant="outline" onClick={() => setSelectedInv(inv)}>
-                      {inv.balance > 0 && canEdit ? "Record Payment" : "View"}
-                    </Button>
+                    <div className="flex items-center justify-end gap-1.5">
+                      <Button size="xs" variant="outline" onClick={() => setSelectedInv(inv)}>
+                        {inv.balance > 0 && canEdit ? "Record Payment" : "View"}
+                      </Button>
+                      <Button size="xs" variant="outline" title="Export invoice as PDF" onClick={() => exportInvoicePdf(inv)}>
+                        <FileText className="size-3.5" />
+                      </Button>
+                    </div>
                   </td>
                 </tr>
               ))}
@@ -173,7 +223,14 @@ export default function BillingPage() {
       <Sheet open={!!selectedInv} onOpenChange={(open) => !open && setSelectedInv(null)}>
         <SheetContent side="right" className="w-[420px]">
           <SheetHeader>
-            <SheetTitle>Invoice {selectedInv?.id}</SheetTitle>
+            <div className="flex items-center justify-between gap-2">
+              <SheetTitle>Invoice {selectedInv?.id}</SheetTitle>
+              {selectedInv && (
+                <Button size="xs" variant="outline" onClick={() => exportInvoicePdf(selectedInv)}>
+                  <Download className="size-3.5" /> PDF
+                </Button>
+              )}
+            </div>
           </SheetHeader>
           {selectedInv && (
             <div className="mt-4 space-y-4">

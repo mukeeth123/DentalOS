@@ -32,6 +32,7 @@ const SUGGESTED_QUESTIONS = [
   "Which patients are overdue for recall?",
   "Where are our revenue opportunities?",
   "How is the AI workforce performing?",
+  "How are our doctors performing?",
 ];
 
 const AI_RESPONSES: Record<string, string> = {
@@ -119,6 +120,25 @@ const AI_RESPONSES: Record<string, string> = {
 • AI Receptionist handled 1,247 calls with 94% resolution rate
 
 **Recommendation:** AI Revenue agent has been idle today. Consider activating it to scan for unscheduled treatment opportunities — estimated $4,800 in potential bookings.`,
+
+  "How are our doctors performing?": `Across your **10 active doctors**, average chair utilization is **78%** with **$429,700** in combined revenue generated this period.
+
+**Top Performers:**
+| Doctor | Utilization | Revenue | No-Show Rate |
+|--------|-------------|---------|---------------|
+| Dr. Thompson | 94% | $81,200 | 2.4% |
+| Dr. Chen | 91% | $44,000 | 3.1% |
+| Dr. Martinez | 88% | $62,000 | 4.2% |
+
+**Needs Attention:**
+• Dr. Phillips is currently On Leave (approved vacation through Jun 22) — 0% utilization this week, $0 production
+• Dr. Davis is Off Duty today with the lowest utilization (58%) and highest no-show rate (7.8%) on the team
+• Dr. Nelson (newest associate) is ramping up at 64% utilization — consider mentoring time with Dr. Martinez
+
+**Recommended Actions:**
+1. Activate the Doctor Leave Coverage Alert workflow to redistribute Dr. Phillips' patients automatically
+2. Review Dr. Davis' schedule for recurring gaps — the Schedule Overflow Routing workflow can backfill open slots
+3. Open Doctor Availability for the full utilization and revenue breakdown by provider`,
 };
 
 function renderMarkdown(text: string): string {

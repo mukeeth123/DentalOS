@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useRef } from "react";
+import { useState, useCallback, useEffect, useRef, useMemo } from "react";
 import {
   Plus, Phone, PhoneOff, PhoneCall, Mic, Volume2, VolumeX,
   CheckCircle, User, Calendar, Sparkles, X, Bot,
@@ -12,6 +12,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sh
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { useAppointmentsStore } from "@/stores/appointmentsStore";
 import { usePatientsStore } from "@/stores/patientsStore";
+import { useDoctorsStore, isDoctorAvailableAt } from "@/stores/doctorsStore";
 import { formatDateTime, formatCurrency } from "@/lib/utils";
 import { toast } from "sonner";
 import type { Appointment } from "@/types";
@@ -41,7 +42,7 @@ const CALL_SCRIPT = [
   { speaker: "patient" as const, text: "I'd like a cleaning and check-up exam.", delay: 700 },
   { speaker: "ai" as const,      text: "Excellent choice! What date and time works best for you?", delay: 500 },
   { speaker: "patient" as const, text: "How about this Friday morning if you have something available?", delay: 700 },
-  { speaker: "ai" as const,      text: "I have Friday June 20th at 10 AM available with Dr. James Chen. Does that work for you?", delay: 600 },
+  { speaker: "ai" as const,      text: "Let me check our doctors' availability for Friday morning... I see Dr. James Chen is open and not on leave that day. I have Friday June 20th at 10 AM available with him. Does that work for you?", delay: 600 },
   { speaker: "patient" as const, text: "Yes, that's perfect!", delay: 600 },
   { speaker: "ai" as const,      text: "Wonderful! I'm booking that right now. You're all set for a new patient exam and cleaning on Friday June 20th at 10 AM with Dr. Chen.", delay: 500 },
   { speaker: "ai" as const,      text: "You'll receive a confirmation text shortly, and a reminder the morning of your appointment. Is there anything else I can help you with?", delay: 400 },
@@ -419,14 +420,21 @@ export function AICallWidget({ onClose, onCreate }: {
 export default function AppointmentsPage() {
   const { appointments, create } = useAppointmentsStore();
   const { patients } = usePatientsStore();
+  const { doctors } = useDoctorsStore();
   const canEdit = useCanEdit("Appointments");
   const [selectedAppt, setSelectedAppt] = useState<Appointment | null>(null);
   const [createOpen, setCreateOpen] = useState(false);
   const [callOpen, setCallOpen] = useState(false);
   const [patientSearch, setPatientSearch] = useState("");
   const [form, setForm] = useState({
-    patientId: "", datetime: "", type: "Cleaning", chair: "Chair 1", notes: "",
+    patientId: "", dentistId: doctors[0]?.id ?? "", datetime: "", type: "Cleaning", chair: "Chair 1", notes: "",
   });
+
+  const selectedDoctor = doctors.find((d) => d.id === form.dentistId) ?? null;
+  const availability = useMemo(() => {
+    if (!selectedDoctor || !form.datetime) return null;
+    return isDoctorAvailableAt(selectedDoctor, new Date(form.datetime).toISOString(), appointments);
+  }, [selectedDoctor, form.datetime, appointments]);
 
   const events = appointments.map((a) => ({
     id: a.id,
@@ -443,18 +451,24 @@ export default function AppointmentsPage() {
   ).slice(0, 5);
 
   const handleCreate = useCallback(() => {
-    if (!form.patientId || !form.datetime) return;
+    if (!form.patientId || !form.datetime || !form.dentistId) return;
     const patient = patients.find((p) => p.id === form.patientId);
-    if (!patient) return;
+    const doctor = doctors.find((d) => d.id === form.dentistId);
+    if (!patient || !doctor) return;
     const start = new Date(form.datetime);
+    const check = isDoctorAvailableAt(doctor, start.toISOString(), appointments);
+    if (!check.available) {
+      toast.error(check.reason ?? "Doctor is not available at this time");
+      return;
+    }
     const end = new Date(start.getTime() + 60 * 60 * 1000);
     create({
       id: `APT-${Date.now()}`,
       patientId: form.patientId,
       patientName: `${patient.firstName} ${patient.lastName}`,
-      dentistId: "STF-0001",
-      dentistName: "Dr. Sarah Martinez",
-      clinicId: "clinic-1a",
+      dentistId: doctor.id,
+      dentistName: `Dr. ${doctor.firstName} ${doctor.lastName}`,
+      clinicId: doctor.clinicIds[0] ?? "clinic-1a",
       startTime: start.toISOString(),
       endTime: end.toISOString(),
       type: form.type as Appointment["type"],
@@ -464,17 +478,25 @@ export default function AppointmentsPage() {
       insuranceVerified: false,
       preAuthRequired: false,
       estimatedRevenue: 200,
-      createdBy: "STF-0001",
+      createdBy: doctor.id,
       createdAt: new Date().toISOString(),
     });
     setCreateOpen(false);
-    setForm({ patientId: "", datetime: "", type: "Cleaning", chair: "Chair 1", notes: "" });
+    setForm({ patientId: "", dentistId: doctors[0]?.id ?? "", datetime: "", type: "Cleaning", chair: "Chair 1", notes: "" });
     setPatientSearch("");
-  }, [form, patients, create]);
+  }, [form, patients, doctors, appointments, create]);
 
   const handleCallCreate = useCallback(() => {
     const start = new Date("2025-06-20T10:00:00");
     const end = new Date("2025-06-20T11:00:00");
+    const doctor = doctors.find((d) => d.id === "STF-0002");
+    if (doctor) {
+      const check = isDoctorAvailableAt(doctor, start.toISOString(), appointments);
+      if (!check.available) {
+        toast.error(`Nova couldn't book: ${check.reason}`);
+        return;
+      }
+    }
     create({
       id: `APT-${Date.now()}`,
       patientId: "PAT-NEW-001",
@@ -487,15 +509,15 @@ export default function AppointmentsPage() {
       type: "Cleaning",
       status: "Scheduled",
       chair: "Chair 2",
-      notes: "New patient. Booked via AI Receptionist call. Insurance: Aetna PPO (AET-928374). DOB: March 14, 1992.",
+      notes: "New patient. Booked via AI Receptionist call. Nova checked Dr. Chen's availability before booking. Insurance: Aetna PPO (AET-928374). DOB: March 14, 1992.",
       insuranceVerified: true,
       preAuthRequired: false,
       estimatedRevenue: 280,
       createdBy: "Nova-AI",
       createdAt: new Date().toISOString(),
     });
-    toast.success("Emily Thompson booked by AI Receptionist — Jun 20 at 10 AM");
-  }, [create]);
+    toast.success("Nova verified Dr. Chen was available, then booked Emily Thompson — Jun 20 at 10 AM");
+  }, [create, doctors, appointments]);
 
   return (
     <div className="space-y-4 h-full">
@@ -600,8 +622,24 @@ export default function AppointmentsPage() {
               )}
             </div>
             <div>
+              <label className="text-sm font-medium mb-1 block">Doctor</label>
+              <select value={form.dentistId} onChange={(e) => setForm((f) => ({ ...f, dentistId: e.target.value }))}
+                className="w-full h-8 rounded-lg border border-border bg-background px-2 text-sm">
+                {doctors.map((d) => (
+                  <option key={d.id} value={d.id} disabled={d.status === "On Leave" || d.status === "Off Duty"}>
+                    Dr. {d.firstName} {d.lastName} — {d.specialties[0]}{d.status === "On Leave" || d.status === "Off Duty" ? ` (${d.status})` : ""}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
               <label className="text-sm font-medium mb-1 block">Date &amp; Time</label>
               <Input type="datetime-local" value={form.datetime} onChange={(e) => setForm((f) => ({ ...f, datetime: e.target.value }))} />
+              {availability && (
+                <p className={`text-xs mt-1.5 flex items-center gap-1 ${availability.available ? "text-green-600" : "text-red-600"}`}>
+                  {availability.available ? "✓ Dr. " + selectedDoctor?.lastName + " is available at this time" : availability.reason}
+                </p>
+              )}
             </div>
             <div>
               <label className="text-sm font-medium mb-1 block">Type</label>
@@ -622,7 +660,7 @@ export default function AppointmentsPage() {
               <textarea value={form.notes} onChange={(e) => setForm((f) => ({ ...f, notes: e.target.value }))}
                 className="w-full min-h-20 rounded-lg border border-border bg-background px-3 py-2 text-sm resize-none" placeholder="Optional notes..." />
             </div>
-            <Button className="w-full" onClick={handleCreate}>Schedule Appointment</Button>
+            <Button className="w-full" onClick={handleCreate} disabled={!!availability && !availability.available}>Schedule Appointment</Button>
           </div>
         </SheetContent>
       </Sheet>

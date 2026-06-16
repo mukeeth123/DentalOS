@@ -7,6 +7,7 @@ export type PermLevel = "Full" | "Read" | "None";
 const ROUTE_PERM: Record<string, string> = {
   "/patients":       "Patients",
   "/appointments":   "Appointments",
+  "/doctor-availability": "Doctor Availability",
   "/clinical":       "Clinical",
   "/imaging":        "Clinical",
   "/insurance":      "Claims",

@@ -14,6 +14,7 @@ import { usePatientsStore } from "@/stores/patientsStore";
 import { useClaimsStore } from "@/stores/claimsStore";
 import { useBillingStore } from "@/stores/billingStore";
 import { formatCurrency, formatDate } from "@/lib/utils";
+import { PdfReport } from "@/lib/pdf";
 import { toast } from "sonner";
 
 type Tab = "overview" | "journey" | "clinical" | "insurance" | "claims" | "billing" | "communications" | "documents";
@@ -206,59 +207,67 @@ export default function PatientDetailPage({ params }: { params: Promise<{ id: st
   const patientInvoices = invoices.filter((inv) => inv.patientId === id);
 
   const generateReport = () => {
-    const content = [
-      "PATIENT REPORT",
-      "=====================================",
-      `Generated: ${new Date().toLocaleString()}`,
-      "",
-      "PATIENT INFORMATION",
-      `Name: ${patient.firstName} ${patient.lastName}`,
-      `ID: ${patient.id}`,
-      `DOB: ${formatDate(patient.dateOfBirth)} (Age ${patient.age})`,
-      `Gender: ${patient.gender}`,
-      `Phone: ${patient.phone}`,
-      `Email: ${patient.email}`,
-      `Address: ${patient.address.street}, ${patient.address.city}, ${patient.address.state} ${patient.address.zip}`,
-      "",
-      "INSURANCE",
-      `Provider: ${patient.insurancePrimary.insurerName}`,
-      `Member ID: ${patient.insurancePrimary.memberId}`,
-      `Group: ${patient.insurancePrimary.groupNumber}`,
-      `Annual Max: ${formatCurrency(patient.insurancePrimary.annualMax)}`,
-      `Annual Used: ${formatCurrency(patient.insurancePrimary.annualUsed)}`,
-      `Deductible: ${formatCurrency(patient.insurancePrimary.deductible)} (Met: ${formatCurrency(patient.insurancePrimary.deductibleMet)})`,
-      `Preventive: ${patient.insurancePrimary.coveragePreventive}%  Basic: ${patient.insurancePrimary.coverageBasic}%  Major: ${patient.insurancePrimary.coverageMajor}%`,
-      "",
-      "HEALTH HISTORY",
-      `Risk Score: ${patient.riskScore}`,
-      `Allergies: ${patient.allergies.length > 0 ? patient.allergies.join(", ") : "None"}`,
-      `Medications: ${patient.medications.length > 0 ? patient.medications.join(", ") : "None"}`,
-      ...(patient.medicalHistory.map((m: any) => `  - ${m.condition} (${m.status})`)),
-      "",
-      "FINANCIAL SUMMARY",
-      `Lifetime Value: ${formatCurrency(patient.lifetimeValue)}`,
-      `Outstanding Balance: ${formatCurrency(patient.outstandingBalance)}`,
-      `Total Claims: ${patientClaims.length}`,
-      `Total Invoices: ${patientInvoices.length}`,
-      "",
-      "TREATMENT PLANS",
-      ...(patient.treatmentPlans.length > 0
-        ? patient.treatmentPlans.map((tp: any) => `  - ${tp.name}: ${formatCurrency(tp.totalFee ?? 0)}`)
-        : ["  No active treatment plans"]),
-      "",
-      `Last Visit: ${patient.lastVisit ? formatDate(patient.lastVisit) : "N/A"}`,
-      `Recall Due: ${patient.recallDue ? formatDate(patient.recallDue) : "N/A"}`,
-      "",
-      "=====================================",
-      "SmileCare Dental Group · (512) 555-0100",
-      "1234 Medical Drive, Austin TX 78701",
-    ].join("\n");
+    const report = new PdfReport(
+      `Patient Report — ${patient.firstName} ${patient.lastName}`,
+      `Patient ID ${patient.id} · Full Chart Summary`
+    );
 
-    const blob = new Blob([content], { type: "text/plain" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `patient-report-${patient.id}.txt`;
-    a.click();
+    report.sectionTitle("Patient Information");
+    report.keyValueRows([
+      ["Name", `${patient.firstName} ${patient.lastName}`],
+      ["Patient ID", patient.id],
+      ["Date of Birth", `${formatDate(patient.dateOfBirth)} (Age ${patient.age})`],
+      ["Gender", patient.gender],
+      ["Phone", patient.phone],
+      ["Email", patient.email],
+      ["Address", `${patient.address.street}, ${patient.address.city}, ${patient.address.state} ${patient.address.zip}`],
+    ]);
+
+    report.sectionTitle("Insurance");
+    report.keyValueRows([
+      ["Provider", patient.insurancePrimary.insurerName],
+      ["Member ID", patient.insurancePrimary.memberId],
+      ["Group Number", patient.insurancePrimary.groupNumber],
+      ["Annual Max", formatCurrency(patient.insurancePrimary.annualMax)],
+      ["Annual Used", formatCurrency(patient.insurancePrimary.annualUsed)],
+      ["Deductible", `${formatCurrency(patient.insurancePrimary.deductible)} (Met: ${formatCurrency(patient.insurancePrimary.deductibleMet)})`],
+      ["Coverage", `Preventive ${patient.insurancePrimary.coveragePreventive}% · Basic ${patient.insurancePrimary.coverageBasic}% · Major ${patient.insurancePrimary.coverageMajor}%`],
+    ]);
+
+    report.sectionTitle("Health History");
+    report.keyValueRows([
+      ["Risk Score", patient.riskScore],
+      ["Allergies", patient.allergies.length > 0 ? patient.allergies.join(", ") : "None"],
+      ["Medications", patient.medications.length > 0 ? patient.medications.join(", ") : "None"],
+    ]);
+    if (patient.medicalHistory.length > 0) {
+      report.table(
+        ["Condition", "Status"],
+        patient.medicalHistory.map((m: any) => [m.condition, m.status])
+      );
+    }
+
+    report.sectionTitle("Financial Summary");
+    report.keyValueRows([
+      ["Lifetime Value", formatCurrency(patient.lifetimeValue)],
+      ["Outstanding Balance", formatCurrency(patient.outstandingBalance)],
+      ["Total Claims", String(patientClaims.length)],
+      ["Total Invoices", String(patientInvoices.length)],
+      ["Last Visit", patient.lastVisit ? formatDate(patient.lastVisit) : "N/A"],
+      ["Recall Due", patient.recallDue ? formatDate(patient.recallDue) : "N/A"],
+    ]);
+
+    report.sectionTitle("Treatment Plans");
+    if (patient.treatmentPlans.length > 0) {
+      report.table(
+        ["Plan", "Estimated Fee"],
+        patient.treatmentPlans.map((tp: any) => [tp.name, formatCurrency(tp.totalFee ?? 0)])
+      );
+    } else {
+      report.paragraph("No active treatment plans.");
+    }
+
+    report.save(`patient-report-${patient.id}.pdf`);
     toast.success("Patient report downloaded");
   };
 
