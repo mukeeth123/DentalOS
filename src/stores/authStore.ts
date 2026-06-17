@@ -32,7 +32,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "SM",
     mfaEnabled: true,
     mfaCode: "482910",
-    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "Full", "AI Agents": "Full", "Doctor Availability": "Full" },
+    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "Full", "AI Agents": "Full", "Doctor Availability": "Full", "Integrations": "Full" },
     lastLogin: "2025-06-15T08:00:00Z",
   },
   {
@@ -48,7 +48,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "JC",
     mfaEnabled: true,
     mfaCode: "731204",
-    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Read", Billing: "Read", Reports: "Read", Settings: "None", "AI Agents": "None", "Doctor Availability": "Read" },
+    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Read", Billing: "Read", Reports: "Read", Settings: "None", "AI Agents": "None", "Doctor Availability": "Read", "Integrations": "Read" },
     lastLogin: "2025-06-15T07:30:00Z",
   },
   {
@@ -64,7 +64,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "LC",
     mfaEnabled: false,
     mfaCode: "000000",
-    permissions: { Patients: "Read", Appointments: "Full", Clinical: "None", Claims: "Read", Billing: "None", Reports: "None", Settings: "None", "AI Agents": "None", "Doctor Availability": "Full" },
+    permissions: { Patients: "Read", Appointments: "Full", Clinical: "None", Claims: "Read", Billing: "None", Reports: "None", Settings: "None", "AI Agents": "None", "Doctor Availability": "Full", "Integrations": "Read" },
     lastLogin: "2025-06-15T08:15:00Z",
   },
   {
@@ -80,7 +80,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "MR",
     mfaEnabled: false,
     mfaCode: "000000",
-    permissions: { Patients: "Read", Appointments: "Read", Clinical: "None", Claims: "Full", Billing: "Read", Reports: "Read", Settings: "None", "AI Agents": "None", "Doctor Availability": "Read" },
+    permissions: { Patients: "Read", Appointments: "Read", Clinical: "None", Claims: "Full", Billing: "Read", Reports: "Read", Settings: "None", "AI Agents": "None", "Doctor Availability": "Read", "Integrations": "Read" },
     lastLogin: "2025-06-14T17:00:00Z",
   },
   {
@@ -96,7 +96,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "AW",
     mfaEnabled: false,
     mfaCode: "000000",
-    permissions: { Patients: "Read", Appointments: "None", Clinical: "None", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "None", "AI Agents": "None", "Doctor Availability": "None" },
+    permissions: { Patients: "Read", Appointments: "None", Clinical: "None", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "None", "AI Agents": "None", "Doctor Availability": "None", "Integrations": "Read" },
     lastLogin: "2025-06-15T09:00:00Z",
   },
   {
@@ -112,7 +112,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "RK",
     mfaEnabled: true,
     mfaCode: "905123",
-    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "Full", "AI Agents": "Full", "Doctor Availability": "Full" },
+    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "Full", "AI Agents": "Full", "Doctor Availability": "Full", "Integrations": "Full" },
     lastLogin: "2025-06-15T06:45:00Z",
   },
   {
@@ -128,7 +128,7 @@ export const MOCK_USERS: AuthUser[] = [
     avatar: "SA",
     mfaEnabled: true,
     mfaCode: "112233",
-    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "Full", "AI Agents": "Full", "Doctor Availability": "Full" },
+    permissions: { Patients: "Full", Appointments: "Full", Clinical: "Full", Claims: "Full", Billing: "Full", Reports: "Full", Settings: "Full", "AI Agents": "Full", "Doctor Availability": "Full", "Integrations": "Full" },
     lastLogin: "2025-06-15T10:00:00Z",
   },
 ];

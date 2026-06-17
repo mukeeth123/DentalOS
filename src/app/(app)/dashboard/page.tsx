@@ -12,7 +12,11 @@ import { KPICard } from "@/components/shared/KPICard";
 import { AgentActivityFeed } from "@/components/shared/AgentActivityFeed";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { useDoctorsStore } from "@/stores/doctorsStore";
-import { AlertTriangle, Clock, Users, CheckCircle, Stethoscope } from "lucide-react";
+import { usePatientsStore } from "@/stores/patientsStore";
+import { useBillingStore } from "@/stores/billingStore";
+import { useImagingStore } from "@/stores/imagingStore";
+import { AlertTriangle, Clock, Users, CheckCircle, Stethoscope, CreditCard, Scan, HeartPulse, Plug } from "lucide-react";
+import { useCustomIntegrationsStore } from "@/stores/customIntegrationsStore";
 
 const STATUS_DOT: Record<string, string> = {
   Available: "bg-green-500", Busy: "bg-yellow-500", "On Leave": "bg-amber-500",
@@ -74,8 +78,34 @@ const CLAIMS_PIPELINE = [
 export default function DashboardPage() {
   const router = useRouter();
   const { doctors } = useDoctorsStore();
+  const { patients } = usePatientsStore();
+  const { invoices } = useBillingStore();
+  const { images } = useImagingStore();
+  const { integrations: customIntegrations } = useCustomIntegrationsStore();
   const availableDoctors = doctors.filter((d) => d.status === "Available").length;
   const onLeaveDoctors = doctors.filter((d) => d.status === "On Leave").length;
+
+  // Patient-level alerts derived from live data
+  const urgentTreatment = patients
+    .filter((p) => p.dentalHistory && p.dentalHistory.some((h: { procedure: string }) =>
+      ["Root Canal", "Extraction", "Implant"].some((kw) => h.procedure.includes(kw))
+    ))
+    .slice(0, 5)
+    .map((p) => ({ id: p.id, name: `${p.firstName} ${p.lastName}`, photo: p.photo, note: "Pending follow-up treatment" }));
+
+  const overduePayments = invoices
+    .filter((inv) => inv.balance > 0 && inv.status !== "Paid")
+    .slice(0, 5)
+    .map((inv) => ({ id: inv.patientId, name: inv.patientName, photo: `https://api.dicebear.com/7.x/personas/svg?seed=${inv.patientName.replace(/ /g,"")}`, note: `Balance due: $${inv.balance.toLocaleString()}` }));
+
+  const imagingFindings = images
+    .filter((img) => img.aiStatus === "Finding")
+    .slice(0, 5)
+    .map((img) => {
+      const p = patients.find((pt) => pt.id === img.patientId);
+      const name = p ? `${p.firstName} ${p.lastName}` : img.patientId;
+      return { id: img.patientId, name, photo: p?.photo ?? "", imgId: img.id, note: `AI finding: ${img.findings[0]?.type ?? "Review needed"} (${img.type})` };
+    });
 
   const ALERTS = [
     {
@@ -260,6 +290,133 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* Patient Alerts */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Urgent Treatment */}
+        <Card className="border-red-200 dark:border-red-800">
+          <CardHeader className="pb-2">
+            <CardTitle className="flex items-center gap-2 text-red-600 dark:text-red-400 text-sm">
+              <HeartPulse className="size-4" /> Urgent Treatment Needed
+              <span className="ml-auto text-xs font-bold bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300 rounded-full px-2 py-0.5">{urgentTreatment.length}</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {urgentTreatment.map((pt) => (
+              <div key={pt.id} className="flex items-center gap-2 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-100 dark:border-red-900/30 p-2 cursor-pointer hover:bg-red-100 dark:hover:bg-red-950/30 transition-colors" onClick={() => router.push(`/patients/${pt.id}`)}>
+                <img src={pt.photo} alt={pt.name} className="size-8 rounded-full bg-muted shrink-0" />
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-semibold text-foreground truncate">{pt.name}</p>
+                  <p className="text-[11px] text-red-600 dark:text-red-400 truncate">{pt.note}</p>
+                </div>
+                <Button size="sm" variant="ghost" className="h-6 text-[10px] px-2 text-red-600 shrink-0" onClick={(e) => { e.stopPropagation(); router.push(`/patients/${pt.id}`); }}>View</Button>
+              </div>
+            ))}
+            {urgentTreatment.length === 0 && <p className="text-xs text-muted-foreground text-center py-3">No urgent treatment alerts</p>}
+          </CardContent>
+        </Card>
+
+        {/* Overdue Payments */}
+        <Card className="border-orange-200 dark:border-orange-800">
+          <CardHeader className="pb-2">
+            <CardTitle className="flex items-center gap-2 text-orange-600 dark:text-orange-400 text-sm">
+              <CreditCard className="size-4" /> Overdue Payments
+              <span className="ml-auto text-xs font-bold bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-full px-2 py-0.5">{overduePayments.length}</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {overduePayments.map((pt) => (
+              <div key={pt.id + pt.note} className="flex items-center gap-2 rounded-lg bg-orange-50 dark:bg-orange-950/20 border border-orange-100 dark:border-orange-900/30 p-2 cursor-pointer hover:bg-orange-100 dark:hover:bg-orange-950/30 transition-colors" onClick={() => router.push("/billing")}>
+                <img src={pt.photo} alt={pt.name} className="size-8 rounded-full bg-muted shrink-0" />
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-semibold text-foreground truncate">{pt.name}</p>
+                  <p className="text-[11px] text-orange-600 dark:text-orange-400 truncate">{pt.note}</p>
+                </div>
+                <Button size="sm" variant="ghost" className="h-6 text-[10px] px-2 text-orange-600 shrink-0" onClick={(e) => { e.stopPropagation(); router.push("/billing"); }}>Pay</Button>
+              </div>
+            ))}
+            {overduePayments.length === 0 && <p className="text-xs text-muted-foreground text-center py-3">No overdue payments</p>}
+          </CardContent>
+        </Card>
+
+        {/* Imaging AI Findings */}
+        <Card className="border-yellow-200 dark:border-yellow-800">
+          <CardHeader className="pb-2">
+            <CardTitle className="flex items-center gap-2 text-yellow-600 dark:text-yellow-500 text-sm">
+              <Scan className="size-4" /> AI Imaging Findings
+              <span className="ml-auto text-xs font-bold bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full px-2 py-0.5">{imagingFindings.length}</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {imagingFindings.map((item) => (
+              <div key={item.imgId} className="flex items-center gap-2 rounded-lg bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-100 dark:border-yellow-900/30 p-2 cursor-pointer hover:bg-yellow-100 dark:hover:bg-yellow-950/30 transition-colors" onClick={() => router.push(`/patients/${item.id}?tab=imaging`)}>
+                <img src={item.photo} alt={item.name} className="size-8 rounded-full bg-muted shrink-0" />
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-semibold text-foreground truncate">{item.name}</p>
+                  <p className="text-[11px] text-yellow-600 dark:text-yellow-400 truncate">{item.note}</p>
+                </div>
+                <Button size="sm" variant="ghost" className="h-6 text-[10px] px-2 text-yellow-600 shrink-0" onClick={(e) => { e.stopPropagation(); router.push("/imaging"); }}>X-Ray</Button>
+              </div>
+            ))}
+            {imagingFindings.length === 0 && <p className="text-xs text-muted-foreground text-center py-3">No imaging findings</p>}
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Integration Health Widget */}
+      {(() => {
+        const ciConnected = customIntegrations.filter((i) => i.status === "connected");
+        const ciFailed = customIntegrations.filter((i) => i.status === "connected" && i.healthScore < 80);
+        const ciDisconnected = customIntegrations.filter((i) => i.status === "disconnected");
+        return (
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center justify-between">
+                <span className="flex items-center gap-2"><Plug className="size-4" /> Integration Health Overview</span>
+                <Button variant="ghost" size="sm" className="text-xs h-7" onClick={() => router.push("/integrations")}>View All</Button>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex items-center gap-6 mb-4 text-xs text-muted-foreground">
+                <span className="flex items-center gap-1"><span className="size-2 rounded-full bg-green-500" /> {ciConnected.length} connected</span>
+                <span className="flex items-center gap-1"><span className="size-2 rounded-full bg-red-500" /> {ciFailed.length} needs attention</span>
+                <span className="flex items-center gap-1"><span className="size-2 rounded-full bg-gray-400" /> {ciDisconnected.length} disconnected</span>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                {customIntegrations.slice(0, 8).map((ci) => (
+                  <div
+                    key={ci.id}
+                    className="rounded-lg border border-border p-3 cursor-pointer hover:border-primary/50 transition-colors"
+                    onClick={() => router.push(`/integrations/${ci.id}`)}
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <p className="text-xs font-medium truncate">{ci.name}</p>
+                      <span className={`size-2 rounded-full shrink-0 ${ci.status === "connected" ? (ci.healthScore >= 80 ? "bg-green-500" : "bg-yellow-500") : "bg-gray-400"}`} />
+                    </div>
+                    <p className="text-[10px] text-muted-foreground mb-2">{ci.category}</p>
+                    {ci.status === "connected" ? (
+                      <>
+                        <div className="w-full bg-muted rounded-full h-1 mb-1">
+                          <div className={`h-1 rounded-full ${ci.healthScore >= 90 ? "bg-green-500" : ci.healthScore >= 70 ? "bg-yellow-500" : "bg-red-500"}`} style={{ width: `${ci.healthScore}%` }} />
+                        </div>
+                        <p className={`text-[10px] font-medium ${ci.healthScore >= 90 ? "text-green-600" : ci.healthScore >= 70 ? "text-yellow-600" : "text-red-600"}`}>{ci.healthScore}% health</p>
+                      </>
+                    ) : (
+                      <p className="text-[10px] text-muted-foreground">Disconnected</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+              {ciFailed.length > 0 && (
+                <div className="mt-3 flex items-center gap-2 rounded-lg bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-900 p-2 text-xs text-yellow-700 dark:text-yellow-400">
+                  <AlertTriangle className="size-3.5 shrink-0" />
+                  {ciFailed.length} custom integration{ciFailed.length > 1 ? "s are" : " is"} below 80% health threshold — {ciFailed.map((c) => c.name).join(", ")}
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        );
+      })()}
 
       {/* Doctor Availability Widget */}
       <Card>

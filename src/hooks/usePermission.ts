@@ -18,7 +18,7 @@ const ROUTE_PERM: Record<string, string> = {
   "/workflows":      "AI Agents",
   "/analytics":      "Reports",
   "/ceo-copilot":    "Reports",
-  "/integrations":   "Settings",
+  "/integrations":   "Integrations",
   "/staff":          "Settings",
   "/settings":       "Settings",
   "/dashboard":      "Patients",

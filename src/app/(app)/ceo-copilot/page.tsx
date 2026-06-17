@@ -33,6 +33,8 @@ const SUGGESTED_QUESTIONS = [
   "Where are our revenue opportunities?",
   "How is the AI workforce performing?",
   "How are our doctors performing?",
+  "Integration health summary?",
+  "Which integration has the most failures?",
 ];
 
 const AI_RESPONSES: Record<string, string> = {
@@ -139,6 +141,66 @@ const AI_RESPONSES: Record<string, string> = {
 1. Activate the Doctor Leave Coverage Alert workflow to redistribute Dr. Phillips' patients automatically
 2. Review Dr. Davis' schedule for recurring gaps — the Schedule Overflow Routing workflow can backfill open slots
 3. Open Doctor Availability for the full utilization and revenue breakdown by provider`,
+
+  "Integration health summary?": `Your **Integration Hub** currently has **17 of 18 integrations connected** with an overall average health score of **91%**.
+
+**Platform Integrations (10):**
+| Integration | Category | Health | Status |
+|-------------|----------|--------|--------|
+| Stripe | Payments | 99% | Connected |
+| SendGrid | Email | 97% | Connected |
+| Google Workspace | Productivity | 96% | Connected |
+| DentalXChange | Claims | 95% | Connected |
+| Twilio | SMS/Voice | 94% | Connected |
+| Open Dental | Practice Mgmt | 92% | Connected |
+| QuickBooks | Accounting | 91% | Connected |
+| DEXIS | Imaging | 88% | Connected |
+| Weave | Communications | 78% | Connected |
+| Dentrix | Practice Mgmt | 0% | ⚠ Disconnected |
+
+**Custom Integrations (8):**
+| Integration | Category | Health | Records |
+|-------------|----------|--------|---------|
+| Custom AI Agent Platform | AI Services | 96% | 24,891 |
+| Salesforce CRM | CRM | 93% | 8,421 |
+| SAP ERP | ERP | 91% | 3,841 |
+| Microsoft Dynamics | ERP | 89% | 11,240 |
+| HubSpot | CRM | 87% | 5,203 |
+| Oracle ERP Cloud | ERP | 85% | 6,124 |
+| Internal DSO System | Enterprise | 78% | 18,420 |
+| Zoho CRM | CRM | 0% | ⚠ Disconnected |
+
+**Total records synced across all integrations: 115,868**
+
+**Needs Attention:**
+• Internal DSO Management System: 94 failed syncs, 78% health — recent connection refused errors unresolved
+• Oracle ERP Cloud: 61 failed syncs, 1 unresolved error from Jun 17 maintenance window
+• Dentrix: Disconnected — not configured
+• Zoho CRM: Disconnected — OAuth not set up`,
+
+  "Which integration has the most failures?": `Based on your current integration data, here are the **top 3 integrations by failed syncs**:
+
+**1. Internal DSO Management System — 94 failed syncs**
+• Success rate: 91.2%
+• Unresolved errors: 1 (CONNECTION_REFUSED from Jun 17)
+• Avg response time: 2,100ms — significantly slower than average
+• Recommendation: Investigate network connectivity to internal DSO servers; consider dedicated VPN tunnel
+
+**2. Oracle ERP Cloud — 61 failed syncs**
+• Success rate: 94.8%
+• Unresolved errors: 1 (TIMEOUT_504 partial sync)
+• Avg response time: 1,240ms
+• Recommendation: Coordinate with Oracle admin on maintenance windows; increase timeout threshold to 60s
+
+**3. HubSpot — 33 failed syncs**
+• Success rate: 96.2%
+• All errors resolved (connection timeouts, auto-retried)
+• Recommendation: No immediate action needed; monitor weekly
+
+**Recommended Workflow Actions:**
+1. Activate **Sync Failed** workflow trigger on Internal DSO System to alert IT team automatically
+2. Enable **Sync Failed** trigger on Oracle ERP to page the ERP admin group
+3. Review Oracle's maintenance schedule and temporarily pause syncs during known windows`,
 };
 
 function renderMarkdown(text: string): string {
